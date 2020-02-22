@@ -6,3 +6,5 @@ The BudgetBuddy web application will allow individuals to track their online pur
 - Created Github repository
 - Began creating HTML files to start creating the base design of the web application
 - home.html mockup completed
+
+<img src="images/home-page-mock-up.png">
