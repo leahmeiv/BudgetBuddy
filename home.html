@@ -7,53 +7,171 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
   <link href="css/style.css" rel="stylesheet"/>
-
 </head>
 <body>
 
+<div class="ui borderless fixed menu">
+  <!--<div class="menu">-->
+  <!--<img class="ui logo image" src="" width="70px" height="70px">-->
+  <!--</div>-->
 
-<div class="ui borderless inverted topmenu menu">
-  <!--<a class="logo"><img src="logo.png"></a>-->
-  <a href="home.html" class="right item">Home</a>
-  <a href="about.html" class=" item">About</a>
-  <a class=" item">Contact</a>
-  <div class="ui category search">
-    <input class="prompt" type="text" placeholder="Search...">
-    <i class="search icon"></i>
-  </div>
-</div>
-
-<!--<img class="ui fluid image" src="backgroud.png"/>-->
-
-<div class="footer-background">
-  <div class="ui three column grid container">
-    <div class="first column">
-      <!--<img src="logo.png" >-->
-    </div>
-
-    <div class="column">
-      Links
-      <div class="ui list ">
-        <hr/>
-        <a href="about.html" class="item">About</a>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">item</div>
-        <div class="item">Contact</div>
+  <div class="ui centered grid container">
+    <div class="ui dropdown item">
+      <a href="home.html" class="active item">
+        <b>HOME</b>
+      </a>
+      <i class="dropdown"></i>
+      <div class="menu">
+        <div class="item">
+          <b>1</b>
+        </div>
       </div>
     </div>
 
-    <div class="column">
-      Contact
-      <hr/>
-      <div class="ui list ">
-        <div class="item">number</div>
-        <div class="item">email</div>
-        <div class="item">address</div>
+    <div class="ui dropdown item">
+      <a href="about.html" class="item">
+        <b>ABOUT</b>
+      </a>
+      <i class="dropdown"></i>
+      <div class="menu">
+        <div class="item">
+          <b>1</b>
+        </div>
+      </div>
+    </div>
+
+    <div class="ui dropdown item">
+      <div class="text"><b>GRAPHS</b></div>
+      <i class="dropdown"></i>
+      <div class="menu">
+        <div class="item"><b>1</b></div>
+      </div>
+    </div>
+
+    <div class="ui dropdown item">
+      <div class="text"><b>CALCULATOR</b></div>
+      <i class="dropdown"></i>
+      <div class="menu">
+        <div class="item"><b>1</b></div>
+      </div>
+    </div>
+
+    <div class="ui dropdown item">
+      <div class="text"><b>OTHER</b></div>
+      <i class="dropdown"></i>
+      <div class="menu">
+        <div class="item"><b>HI THERE</b></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="right item">
+    <div class="ui icon input">
+      <input type="text" placeholder="Search...">
+      <i class="search icon"></i>
+    </div>
+    <div class="ui dropdown item">
+      <div class="text"><b><i class="user icon"></i></b></div>
+      <i class="dropdown"></i>
+      <div class="menu">
+        <div class="item"><b>HI THERE</b></div>
       </div>
     </div>
   </div>
 </div>
+</div>
+
+<script>
+  $('.ui.dropdown')
+    .dropdown({transition: 'drop', on: 'hover' })
+  ;
+</script>
+
+<div class="container">
+  <img class="ui fluid image" src="https://wallpapercave.com/wp/8iAP1eI.jpg" />
+  <div class="slogan1" ><b>BE MY BUDGET BUDDY!</b></div>
+  <div class="slogan2" >It's time to see how much you have spent...</div>
+  <button class="ui button one"><b>LOGIN</b></button>
+  <button class="ui button two"><b>SIGN UP</b></button>
+</div>
+
+
+
+<div class="footer-background-two">
+  <div class="ui four column grid container two" style="color:white">
+    <div class="column">
+      <b>Information</b>
+      <div class="column">
+        <b>link</b>
+        <div class="column">
+          <b>link</b>
+        </div>
+        <div class="column">
+          <b>link</b>
+        </div>
+        <div class="column">
+          <b>link</b>
+        </div>
+        <div class="column">
+          <b>link</b>
+        </div>
+        <div class="column">
+          <b>link</b>
+        </div>
+        <div class="column">
+          <b>SITE FEEDBACK</b>
+        </div>
+      </div>
+    </div>
+
+    <div class="column" style="color:white">
+      <b>GET HELP</b>
+      <div class="ui link list">
+        <a class="item" style="color: gray">Link</a>
+        <a class="item" style="color: gray">Link</a>
+        <a class="item" style="color: gray">Link</a>
+        <a class="item" style="color: gray">Contact Us</a>
+      </div>
+    </div>
+
+    <div class="column" style="color:white">
+      <b>ABOUT Budget Buddy</b>
+      <div class="ui link list">
+        <a class="item" style="color: gray">Link</a>
+        <a class="item" style="color: gray">Link</a>
+        <a class="item" style="color: gray">Link</a>
+      </div>
+    </div>
+
+    <div class="column" style="color:white">
+      <i class="twitter circular inverted  icon"></i>
+      <i class="facebook f circular inverted  icon"></i>
+      <i class="youtube square circular inverted  icon"></i>
+      <i class="instagram circular inverted  icon"></i>
+    </div>
+
+
+
+    <div class="ui bottom secondary menu">
+      <div class="grid container">
+        <div class="flag item">
+          <img src="https://content.nike.com/content/dam/nike/global/country_flags/us_sml.png"/>
+        </div>
+        <div class="item" style="color: white">United States</div>
+        <div class="item" style="color: white">
+          <i class= "copyright outline icon"></i>
+          2020 BudgetBuddy, Inc. All Rights Reserved
+        </div>
+        <div class="right item" style="color: white">Guides</div>
+        <div class="item" style="color: white">Terms of Use</div>
+        <div class="item" style="color: white"> Privacy Policy</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 
 </body>
 </html>
+
