@@ -1,16 +1,12 @@
-.ui.borderless.topmenu.menu{
-  background-color: #f5f5f5;
+.ui.topmenu.fixed.menu{
+  font-family: Helvetica, "sans-serif";
+  font-size: 12px;
+  height: 38px;
   box-shadow: none;
-  border: none;
 }
-.ui.borderless.menu{
-  box-shadow: none;
-  border: none;
-}
-
-.footer-background {
-  background-color: #292929;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: white;
+.ui.borderless.fixed.menu{
+  font-size: 14px;
+  z-index: auto;
+  margin-top: 38px;
+  border-top: none;
 }
