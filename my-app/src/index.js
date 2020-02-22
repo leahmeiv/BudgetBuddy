@@ -15,3 +15,5 @@ class BudgetBuddy extends React.Component {
 }
 
 ReactDOM.render(<BudgetBuddy />, document.getElementById('root'));
+
+// export default BudgetBuddy
