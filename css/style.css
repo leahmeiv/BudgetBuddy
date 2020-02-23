@@ -21,8 +21,8 @@
 
 .footer-background-two{
   background-color: black;
-  padding:20px;
   font-family: Helvetica,"sans-serif";
+  padding-bottom: 0;
 }
 
 .ui.three.column.grid.container.two{
@@ -70,9 +70,34 @@
   color:black;
 }
 
+.about-background{
+  background: #FF4E50;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #F9D423, #FF4E50);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #F9D423, #FF4E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  width: 100%;
+  margin:0 auto;
+}
 
+.about-p-font{
+  font-family:"Arial Narrow",sans-serif;
+  color: white;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 18px;
 
+}
 
+.about-h-font{
+  font-family:"Arial Narrow",sans-serif;
+  color: white;
+  padding-top: 8%;
+  font-size: 50px;
+}
+
+.about-image{
+  padding-bottom: 5%;
+}
 
 
 
