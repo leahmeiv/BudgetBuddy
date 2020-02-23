@@ -9,7 +9,7 @@ The BudgetBuddy web application will allow individuals to track their online pur
 -about.html mockup completed
 
 <img src="images/home-page-mock-up.png">
-<img src="images/about-page-mock-up.png">
+<img src="images/about-page-mockup.png">
 
 ## In-Progress
 - React set up for Sign up, Sign in, About, and Home pages
