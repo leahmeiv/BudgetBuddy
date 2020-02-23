@@ -10,23 +10,28 @@ The BudgetBuddy web application will allow individuals to track their online pur
 <img src="images/home-page-mock-up.png">
 
 ## Team Efforts
+
 ###### Leah-Mei Villanueva
+
 **Completed:**
 -Home page mockup 
 **Pending:**
 
 ###### Sollie Garcia
+
 **Completed:**
 
-Pending:
+**Pending:**
 
 ###### Levy Jean Matsuda
+
 **Completed:**
 -about page mockup 
 
 **Pending:**
 
 ###### Leisha Soberano-Keawemauhili
+
 **Completed:** 
 
 **Pending:**
