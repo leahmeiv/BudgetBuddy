@@ -14,7 +14,7 @@ The BudgetBuddy web application will allow individuals to track their online pur
 ###### Leah-Mei Villanueva
 
 **Completed:**
--Home page mockup 
+- Home page mockup 
 **Pending:**
 
 ###### Sollie Garcia
@@ -26,7 +26,7 @@ The BudgetBuddy web application will allow individuals to track their online pur
 ###### Levy Jean Matsuda
 
 **Completed:**
--about page mockup 
+- About page mockup 
 
 **Pending:**
 
