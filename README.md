@@ -6,8 +6,13 @@ The BudgetBuddy web application will allow individuals to track their online pur
 - Created Github repository
 - Began creating HTML files to start creating the base design of the web application
 - home.html mockup completed
+-about.html mockup completed
 
 <img src="images/home-page-mock-up.png">
+<img src="images/about-page-mock-up.png">
+
+## In-Progress
+- React set up for Sign up, Sign in, About, and Home pages
 
 ## Team Efforts
 
@@ -30,6 +35,7 @@ The BudgetBuddy web application will allow individuals to track their online pur
 - About page mockup 
 
 **Pending:**
+- About page with React set-up 
 
 ###### Leisha Soberano-Keawemauhili
 
