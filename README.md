@@ -15,6 +15,7 @@ The BudgetBuddy web application will allow individuals to track their online pur
 
 **Completed:**
 - Home page mockup 
+
 **Pending:**
 
 ###### Sollie Garcia
