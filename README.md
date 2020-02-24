@@ -24,6 +24,9 @@ The BudgetBuddy web application will allow individuals to track their online pur
 - Home page mockup 
 
 **Pending:**
+- Home page with react setup
+- Create Sign in page and link to home page
+- Create sign up page and link to home page
 
 ###### Sollie Garcia
 
