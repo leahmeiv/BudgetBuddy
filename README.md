@@ -19,6 +19,8 @@ The BudgetBuddy web application will allow individuals to track their online pur
 ###### Leah-Mei Villanueva
 
 **Completed:**
+- Created Github Repository
+- Created initial setup for code (ESlint, html files)
 - Home page mockup 
 
 **Pending:**
