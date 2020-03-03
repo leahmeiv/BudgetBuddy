@@ -17,36 +17,42 @@ The BudgetBuddy web application will allow individuals to track their online pur
 
 ## Team Efforts
 
-###### Leah-Mei Villanueva
+#### Completed By: Leah-Mei Villanueva
 
-**Completed:**
+#### Initialization
 - Created Github Repository
 - Created initial setup for code (ESlint, html files)
+
+#### Home Page
 - Home page mockup 
+
+#### Sign Up Page
+- Sign up button links to home page
+
+##### Pending: 
+- Edit sign up page/links and make it functional (signup-page branch)
+
+#### Login Page
 - Login button links to login.html
 
-**Pending:**
-- Edit Sign in page and link to account (add error if no account)
-- Create sign up page and link to home page
+##### Pending:
+- Edit Sign in page/links and link to account (add error if no account)
 
-###### Sollie Garcia
 
-**Completed:**
+#### Completed By: Sollie Garcia
 
-**Pending:**
+##### Pending:
 
-###### Levy Jean Matsuda
+#### Completed By: Levy Jean Matsuda
 
-**Completed:**
+***About Page***
 - About page mockup 
 
-**Pending:**
+##### Pending:
 - About page with React set-up 
 
-###### Leisha Soberano-Keawemauhili
+#### Completed By: Leisha Soberano-Keawemauhili
 
-**Completed:** 
-
-**Pending:**
+##### Pending:
 
 
