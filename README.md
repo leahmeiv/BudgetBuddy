@@ -7,6 +7,7 @@ The BudgetBuddy web application will allow individuals to track their online pur
 - Began creating HTML files to start creating the base design of the web application
 - home.html mockup completed
 -about.html mockup completed
+- Attempted to do react, will do html instead.
 
 <img src="images/home-page-mock-up.png">
 <img src="images/about-page-mockup.png">
@@ -22,10 +23,10 @@ The BudgetBuddy web application will allow individuals to track their online pur
 - Created Github Repository
 - Created initial setup for code (ESlint, html files)
 - Home page mockup 
+- Login button links to login.html
 
 **Pending:**
-- Home page with react setup
-- Create Sign in page and link to home page
+- Edit Sign in page and link to account (add error if no account)
 - Create sign up page and link to home page
 
 ###### Sollie Garcia
