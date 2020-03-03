@@ -29,14 +29,13 @@ The BudgetBuddy web application will allow individuals to track their online pur
 #### Sign Up Page
 - Sign up button links to home page
 
-##### Pending: 
-- Edit sign up page/links and make it functional (signup-page branch)
-
 #### Login Page
 - Login button links to login.html
 
-##### Pending:
+#### Pending:
 - Edit Sign in page/links and link to account (add error if no account)
+- Edit sign up page/links and make it functional (signup-page branch)
+
 
 
 #### Completed By: Sollie Garcia
