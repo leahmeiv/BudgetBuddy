@@ -1,0 +1,46 @@
+#body.ui.borderless.fixed.menu{
+  font-size: 14px;
+  z-index: auto;
+  margin-top: 38px;
+  border-top: none;
+}
+
+#body.ui.fluid.image{
+  padding-top: 109px;
+}
+
+.slogan1 {
+  font-family:"Arial Narrow",sans-serif;
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  top: 30%;
+  left:5%
+}
+
+.slogan2{
+  font-family:"sans-serif";
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  top: 35%;
+  left:5%
+}
+
+
+.ui.button.one{
+  position: absolute;
+  top:40%;
+  left:5%;
+  background-color:white;
+  font-family: "Arial Narrow",sans-serif;
+  color:black;
+}
+.ui.button.two{
+  position: absolute;
+  top:40%;
+  left:20%;
+  background-color:white;
+  font-family: "Arial Narrow",sans-serif;
+  color:black;
+}

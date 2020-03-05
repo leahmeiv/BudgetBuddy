@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import '../style.css';
+import { Link } from 'react-router-dom'
+import '../css/home.css';
 import 'semantic-ui-css/semantic.min.css';
-import { Container, Dropdown, Menu, Image, Icon, Search } from 'semantic-ui-react';
+import { Container, Dropdown, Menu, Image, Icon, Search, Button } from 'semantic-ui-react';
+
+
 
 
 class TopMenu extends React.Component {
@@ -61,6 +64,29 @@ class TopMenu extends React.Component {
   }
 }
 
+class Background extends React.Component {
+  render() {
+    return (
+
+      <Container fluid>
+        <Image fluid className="ui fluid image"
+               src="https://wallpapercave.com/wp/8iAP1eI.jpg"/>
+
+        <p className="slogan1">
+          <b>BE MY BUDGET BUDDY!</b>
+        </p>
+        <p className="slogan2">
+          It's time to see how much you have spent...               </p>
+        <Link to={'./pages/login.html'} className="ui button one"> <button>
+          Login</button></Link>
+        <Button className="ui button two">
+          Sign Up
+        </Button>
+      </Container>
+    )
+  }
+}
+
 
 
 class Home extends React.Component {
@@ -69,6 +95,7 @@ class Home extends React.Component {
     return (
       <div>
         <TopMenu/>
+        <Background/>
       </div>
     );
   }
