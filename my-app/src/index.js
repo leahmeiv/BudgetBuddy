@@ -9,7 +9,7 @@ class BudgetBuddy extends React.Component {
   render() {
     return (
       <Container textAlign="center">
-    <Header as='h1'>Island Snow!</Header>
+    <Header as='h1'>BudgetBuddy</Header>
     </Container>
   );
   }
