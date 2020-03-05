@@ -77,8 +77,8 @@ class Background extends React.Component {
         </p>
         <p className="slogan2">
           It's time to see how much you have spent...               </p>
-        <Link to={'./pages/login.html'} className="ui button one"> <button>
-          Login</button></Link>
+        <Button className="ui button one">
+          Login</Button>
         <Button className="ui button two">
           Sign Up
         </Button>
