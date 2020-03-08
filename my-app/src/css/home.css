@@ -109,3 +109,27 @@
   color:black;
   font-size: 25px;
 }
+
+body{
+  background-color: #222222 !important;
+  color: white !important;
+
+}
+
+/*from chrome dev tools*/
+.ui[class*="vertically divided"].grid>.row:first-child>.column {
+  padding-top: 15px;
+}
+
+.ui.link.list .item{
+  color: #999999 !important;
+}
+
+.ui.bottom.secondary.menu .item {
+  color: #888888 !important;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  padding-left: 300px;
+}
+
