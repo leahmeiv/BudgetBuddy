@@ -22,19 +22,22 @@ The BudgetBuddy web application will allow individuals to track their online pur
 #### Initialization
 - Created Github Repository
 - Created initial setup for code (ESlint, html files)
+- Setup Semantic UI React 
 
 #### Home Page
-- Home page mockup 
+- Created html mockup
+- Converted to react with new design
 
 #### Sign Up Page
-- Sign up button links to home page
+
 
 #### Login Page
-- Login button links to login.html
+
 
 #### Pending:
 - Edit Sign in page/links and link to account (add error if no account)
 - Edit sign up page/links and make it functional (signup-page branch)
+
 
 
 
