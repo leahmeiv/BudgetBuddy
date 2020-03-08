@@ -11,8 +11,10 @@
   padding-bottom: 0;
   padding-right: 150px;
   margin-bottom: 0;
-  box-shadow: none;
+  opacity: 98%;
 }
+
+
 
 /*remove dropdown arrow*/
 .ui.menu .dropdown.item i.icon {

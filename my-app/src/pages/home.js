@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { Link } from 'react-router-dom'
 import '../css/home.css';
 import Logo from  '../images/menu-logo.png';
+import HomeBackground from '../images/home-background.jpeg';
 import 'semantic-ui-css/semantic.min.css';
 import { Container, Dropdown, Menu, Image, Icon, Search, Button } from 'semantic-ui-react';
 
@@ -69,7 +70,7 @@ class Background extends React.Component {
 
       <Container fluid>
         <Image fluid className="ui fluid image"
-               src="https://wallpapercave.com/wp/8iAP1eI.jpg"/>
+               src={HomeBackground}/>
 
         <p className="slogan1">
           <b>BE MY BUDGET BUDDY!</b>
