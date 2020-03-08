@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Link } from 'react-router-dom'
 import '../css/home.css';
+import Logo from  '../images/menu-logo.png';
 import 'semantic-ui-css/semantic.min.css';
 import { Container, Dropdown, Menu, Image, Icon, Search, Button } from 'semantic-ui-react';
 
@@ -13,7 +14,7 @@ class TopMenu extends React.Component {
       <Container>
         <Menu borderless fixed className='ui fixed borderless top menu'>
 
-          {/*<Image className=" logo item" src=""/>*/}
+          <Image className="logo medium item" src={Logo}/>
 
 
           <Dropdown className="ui dropdown simple item" text="HOME" >
