@@ -1,20 +1,11 @@
 # BudgetBuddy
 The BudgetBuddy web application will allow individuals to track their online purchases and find the total amount of money they spend in a month.
 
-## Progress
+## Progress Completion
+#### Whole Team
 - Discussed with group and created an informational paper on what our project will be about.
 - Created Github repository
 - Began creating HTML files to start creating the base design of the web application
-- home.html mockup completed
--about.html mockup completed
-
-<img src="images/home-page-mockup.png" width="600" height="350">
-<img src="images/about-page-mockup.png" width="600" height="350">
-
-## In-Progress
-- React set up for Sign up, Sign in, About, and Home pages
-
-## Team Efforts
 
 #### Completed By: Leah-Mei Villanueva
 
@@ -29,19 +20,19 @@ The BudgetBuddy web application will allow individuals to track their online pur
 #### Home Page
 ##### (02/04/2020 - 02/24/2020)
 - Created html mockup
+<img src="images/home-page-mockup.png" width="600" height="350">
 
 ##### Date: (02/25/2020 - 03/08/2020)
 - Converted to react with new design
-
 <img src="images/home-page-react.png" width="600" height="350">
 
 #### About Page
-
 ##### Date: (02/25/2020 - 03/08/2020)
 - Converted to react with new design
-
 <img src="images/about-page-react.png" width="600" height="350">
 
+## In-Progress
+- React set up for Sign up, Sign in, About, and Home pages
 
 #### Pending:
 #### Login Page
