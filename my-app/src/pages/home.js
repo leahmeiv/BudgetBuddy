@@ -6,8 +6,6 @@ import 'semantic-ui-css/semantic.min.css';
 import { Container, Dropdown, Menu, Image, Icon, Search, Button } from 'semantic-ui-react';
 
 
-
-
 class TopMenu extends React.Component {
   render() {
     return (
@@ -76,7 +74,7 @@ class Background extends React.Component {
           <b>BE MY BUDGET BUDDY!</b>
         </p>
         <p className="slogan2">
-          It's time to see how much you have spent...               </p>
+          It's time to see how much you have spent...</p>
         <Button className="ui button one">
           Login</Button>
         <Button className="ui button two">

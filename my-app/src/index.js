@@ -13,7 +13,6 @@ class BudgetBuddy extends React.Component {
     return (
       <div>
         <Home/>
-        <Background/>
       </div>
   );
   }
