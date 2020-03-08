@@ -5,6 +5,10 @@
   border-top: none;
 }
 
+.logo.medium.item{
+  padding:0;
+}
+
 .ui.borderless.fixed.top.menu{
   background-color: #222;
   font-family: Helvetica, Arial, "sans-serif";
