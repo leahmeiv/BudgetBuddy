@@ -14,6 +14,12 @@
   box-shadow: none;
 }
 
+/*remove dropdown arrow*/
+.ui.menu .dropdown.item i.icon {
+  opacity: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
 
 /*menu items font color*/
 .ui.menu .item{
@@ -35,6 +41,7 @@
 
 .ui.search .results{
   background-color: #222222 ;
+  border: none;
 }
 
 .ui.search .results .message .header {
