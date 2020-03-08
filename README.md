@@ -28,6 +28,9 @@ The BudgetBuddy web application will allow individuals to track their online pur
 - Created html mockup
 - Converted to react with new design
 
+#### About Page
+- Converted to react with new design
+
 #### Sign Up Page
 
 
@@ -37,9 +40,9 @@ The BudgetBuddy web application will allow individuals to track their online pur
 #### Pending:
 - Edit Sign in page/links and link to account (add error if no account)
 - Edit sign up page/links and make it functional (signup-page branch)
-
-
-
+- Specific route to different pages
+- Route links to pages
+- Run app as regular website
 
 #### Completed By: Sollie Garcia
 
