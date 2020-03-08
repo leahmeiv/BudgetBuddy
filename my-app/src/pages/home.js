@@ -19,8 +19,9 @@ class TopMenu extends React.Component {
           <Image className="logo medium item" src={Logo}/>
 
 
-          <Dropdown className="ui dropdown simple item" text="HOME" >
-            <Dropdown.Menu type='text'>
+          <Dropdown className="ui dropdown simple item" placeholder="HOME" >
+
+            <Dropdown.Menu  type='text'>
               <Dropdown.Item>1</Dropdown.Item>
               <Dropdown.Item>2</Dropdown.Item>
               <Dropdown.Item>3</Dropdown.Item>

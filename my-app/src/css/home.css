@@ -1,5 +1,5 @@
 #body.ui.borderless.fixed.menu{
-  font-size: 14px;
+  font-size: 20px;
   z-index: auto;
   margin-top: 38px;
   border-top: none;
@@ -14,6 +14,10 @@
   opacity: 98%;
 }
 
+.ui.default.dropdown:not(.button)>.text, .ui.dropdown:not(.button)>.default.text {
+  color: cadetblue;
+  font-weight: bolder;
+}
 
 /*remove dropdown arrow*/
 .ui.menu .dropdown.item i.icon {
@@ -34,8 +38,6 @@
   font-family: Helvetica, Arial, "sans-serif";
   color: #888888 !important;
 }
-
-
 
 /*search placeholder color*/
 .ui.search ::placeholder{
@@ -73,7 +75,7 @@
 
 .slogan1 {
   font-family:Helvetica, Arial, "sans-serif";
-  font-size: 50px;
+  font-size: 40px;
   color: white;
   position: absolute;
   top: 50%;
@@ -82,7 +84,7 @@
 
 .slogan2{
   font-family:Helvetica, Arial, "sans-serif";
-  font-size: 40px;
+  font-size: 30px;
   font-weight: lighter;
   color: white;
   position: absolute;
@@ -98,7 +100,7 @@
   background-color:white;
   font-family: "Arial Narrow",sans-serif;
   color:black;
-  font-size: 25px;
+  font-size: 20px;
 }
 .ui.button.two{
   position: absolute;
@@ -107,7 +109,7 @@
   background-color:white;
   font-family: "Arial Narrow",sans-serif;
   color:black;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 body{
