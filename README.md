@@ -40,6 +40,11 @@ The BudgetBuddy web application will allow individuals to track their online pur
 <img src="images/about-page-mockup.png" width="600" height="350">
 
 #### Completed By: Leisha Soberano-Keawemauhili
+##### Date: (02/25/2020 - 03/15/2020)
+#### Components
+- Converted the TopMenu and FooterMenu into components for pages
+#### App
+- Implemented routing between pages through the navigation bar
 
 ## Pending Progress: 
 #### Leah-Mei Villanueva
@@ -72,7 +77,9 @@ The BudgetBuddy web application will allow individuals to track their online pur
 
 #### Leisha Soberano-Keawemauhili
 ###### Date: (02/04/2020 - 02/23/2020)
-###### Date: (02/24/2020 - 03/08/2020)
+###### Date: (02/24/2020 - 03/15/2020)
+- Implement routing
+###### Date: (03/16/2020 - MM/DD/YYYY)
 
 
 
