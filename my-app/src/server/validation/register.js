@@ -15,7 +15,7 @@ module.exports = function validateRegistorInput(data) {
   data.password = !isEmpty(data.password) ? data.password : "";
   data.conPass = !isEmpty(data.conPass) ? data.conPass : "";
 
-
+//checking if fields are empty and if passwords match
   if (Validator.isEmpty(data.firstName)) {
     errors.firstName = "Name field is required";
   }
@@ -23,8 +23,11 @@ module.exports = function validateRegistorInput(data) {
     errors.lastName = "Name field is required";
   }
   if (Validator.isEmpty(data.email)) {
-    errors.email = "Email is required and must be a valid email";
+    errors.email = "Email is required";
+  } else if (!Validator.isEmail(data.email)) {
+    errors.email = "Email is invalid";
   }
+
   if (Validator.isEmpty(data.password)) {
     errors.password = "Password field is required";
   }

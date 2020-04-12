@@ -11,36 +11,35 @@ const validateLoginInput = require("../../validation/login");
 const User = require("../../models/userModel");
 
 servRouter.post("/register", (req, res) => {
-  //Form validation
-  const {errors, isValid} = validateRegisterInput(req.body);
-
-  if(!isValid) {
+  // Validating entered data
+  const { errors, isValid } = validateRegisterInput(req.body);
+// If anything is invalid, executes this
+  if (!isValid) {
     return res.status(400).json(errors);
   }
-
-  User.findOne({ email: req.body.email}).then(returnedStuff => {
-    if(returnedStuff) {
-      return res.status(400).json({email: "Email already exists"});
+  //else, it checks if email exists
+  User.findOne({ email: req.body.email }).then(user => {
+    if (user) {
+      return res.status(400).json({ email: "Email already exists" });
+    } else {
+      const newUser = new User({
+        firstName: req.body.firstName,
+        lastName: req.body.lastName,
+        email: req.body.email,
+        password: req.body.password
+      });
+// Hashes password for security purposes
+      bcrypt.genSalt(10, (err, salt) => {
+        bcrypt.hash(newUser.password, salt, (err, hash) => {
+          if (err) throw err;
+          newUser.password = hash;
+          newUser
+            .save()
+            .then(user => res.json(user))
+            .catch(err => console.log(err));
+        });
+      });
     }
-  });
-
-  //if email doesnt already exists, creating new user
-  const newUser = new User({
-    firstName: req.body.firstName,
-    lastName: req.body.lastName,
-    email: req.body.email,
-    password: req.body.password
-  });
-
-  bcrypt.genSalt(10, (err, salt) => {
-    bcrypt.hash(newUser.password, salt, (err, hash) => {
-      if (err) {console.log("Error: " + err)}
-      newUser.password = hash;
-      newUser
-        .save()
-        .then(user => res.json(user))
-        .catch(err => console.log(err));
-    });
   });
 });
 
