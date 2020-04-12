@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 import '../css/about.css';
 import { Link, Redirect } from 'react-router-dom';
 import 'semantic-ui-css/semantic.min.css';
@@ -19,7 +20,7 @@ class Login extends React.Component {
   }
 
   render() {
-  
+
     return (
       <div>
         <div>
