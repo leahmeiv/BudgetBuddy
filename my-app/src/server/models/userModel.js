@@ -24,11 +24,19 @@ const userSchema = new Schema({
     type: String,
     required: true,
     trim: true
-  }
-}, {
-  timestamps: true,
+  },
+  isDeleted: {
+    type: Boolean,
+    default: false
+  },
+date: {
+    type: Date,
+  defualt: Date.now
+}
 });
 
-const User = mongoose.model('User', userSchema);
 
+
+
+const User = mongoose.model('User', userSchema);
 module.exports = User;
