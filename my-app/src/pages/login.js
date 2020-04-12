@@ -6,9 +6,20 @@ import { Container, Button, Form, Header, Message} from 'semantic-ui-react';
 import '../css/login.css'
 
 class Login extends React.Component {
+  // Initialize component states with properties for login
+  constructor(props) {
+    super(props);
 
-  render()
-  {
+    this.state = {
+      isLoading: true,
+      loginError: '',
+      email: '',
+      password: ''
+    };
+  }
+
+  render() {
+  
     return (
       <div>
         <div>
