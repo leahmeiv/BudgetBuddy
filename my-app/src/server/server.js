@@ -32,5 +32,5 @@ require("./config/passport")(passport);
 //express router
 app.use("/api/user", users);
 
-const port = 5000;
+const port = process.env.PORT || 5000;
 app.listen(port, () => console.log('Server is on port ' + port));

@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import '../css/about.css';
-import { Link, Redirect } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import 'semantic-ui-css/semantic.min.css';
 import { Container, Button, Form, Header, Message} from 'semantic-ui-react';
 import '../css/login.css'

@@ -1,9 +1,9 @@
 import React from 'react';
 import '../css/about.css';
 import axios from 'axios';
-import { Link, Redirect } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import 'semantic-ui-css/semantic.min.css';
-import { Container, Button, Form, Header, Message, Grid, Checkbox} from 'semantic-ui-react';
+import { Container, Button, Form, Header, Message, Grid} from 'semantic-ui-react';
 import '../css/signup.css'
 
 class Signup extends React.Component {
@@ -24,7 +24,7 @@ class Signup extends React.Component {
   }
 
   //handing changes in login fields
-  onChangeEmail = e => {
+  onChange = e => {
     this.setState({
       [e.target.id]: e.target.value
     });
@@ -46,7 +46,7 @@ class Signup extends React.Component {
     console.log(newUser);
     //axios.post('http://localhost:5000/api/user/register', user)
     //.then(res => console.log(res.data));
-  }
+  };
 
 
   render() {

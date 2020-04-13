@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const userSessionSchema =  new Schema({
   userId: {
     type: Number,
-    defualt: -1
+    default: -1
   },
   timestamp: {
     type: Date,
