@@ -39,6 +39,25 @@ The BudgetBuddy web application will allow individuals to track their online pur
 - About page mockup 
 <img src="images/about-page-mockup.png" width="600" height="350">
 
+##### Date: (03/09/2020 - 04/12/2020)
+### Initialize Database and Backend Dependencies
+- installed MongoDB, Express, Bycryptjs, jsonwebtoken, passport, validator, is-empty
+
+### Build Server
+- created server.js file to create and build express app 
+- configured databases
+  - expense API
+  - users API
+- Created login and registration function 
+- Created functions to add, delete, and get expenses
+
+### Fuzz Testing 
+- Tested register functions 
+- Tested login functions 
+- Tested expense functions (add, delete, get)
+
+
+
 #### Completed By: Leisha Soberano-Keawemauhili
 ##### Date: (02/25/2020 - 03/15/2020)
 #### Components
@@ -49,8 +68,8 @@ The BudgetBuddy web application will allow individuals to track their online pur
 ## Pending Progress: 
 #### Leah-Mei Villanueva
 ###### Date: (02/04/2020 - 02/23/2020)
-- React setup for Sign up 
-- React setup for Sign in 
+- React setup for Sign up (completed 04/02/2020 LM)
+- React setup for Sign in (completed 04/02/2020 LM)
 - React setup for About page (completed 03/07/2020 LV)
 - React setup for Home page (completed 03/07/2020 LV)
 
@@ -69,6 +88,16 @@ The BudgetBuddy web application will allow individuals to track their online pur
 #### Levy Jean Matsuda
 ###### Date: (02/04/2020 - 02/23/2020)
 - About page with React set-up (completed 03/07/2020 LV)
+
+###### Date: (04/13/2020 - 04/26/2020)
+### Configuration 
+- configure front-end and back-end connection
+- Configure user with their logged expenses 
+
+### Client-end tasks
+- Add mask to password input field 
+- React component for expense list 
+- Configure protected routes 
 
 
 #### Sollie Garcia
