@@ -40,6 +40,15 @@ The BudgetBuddy web application will allow individuals to track their online pur
 <img src="images/about-page-mockup.png" width="600" height="350">
 
 ##### Date: (03/09/2020 - 04/12/2020)
+
+### Sign-in Page
+- created react design for sign in 
+<img src="images/login-page-react.png" width="600" height="350">
+
+### Registration page
+- created react design for registration page
+<img src="images/reg-page-react.png" width="600" height="350">
+
 ### Initialize Database and Backend Dependencies
 - installed MongoDB, Express, Bycryptjs, jsonwebtoken, passport, validator, is-empty
 
