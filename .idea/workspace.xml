@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f34d1c5d-e110-47ae-84a0-2dd10338e1b7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/images/login-page-react.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/reg-page-react.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -96,6 +99,11 @@
           <entry key="Markdown" value="1587" />
         </counts>
       </usages-collector>
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+        </counts>
+      </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
@@ -114,7 +122,7 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="733">
+              <first_editor relative-caret-position="795">
                 <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
               </first_editor>
               <second_editor />
@@ -205,7 +213,7 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1598" />
     <option name="height" value="797" />
@@ -237,6 +245,11 @@
             <path>
               <item name="BudgetBuddy" type="b2602c69:ProjectViewProjectNode" />
               <item name="BudgetBuddy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BudgetBuddy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BudgetBuddy" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BudgetBuddy" type="b2602c69:ProjectViewProjectNode" />
@@ -275,19 +288,19 @@
     <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images" />
+      <recent name="$PROJECT_DIR$/my-app/src" />
+      <recent name="$PROJECT_DIR$/my-app" />
+      <recent name="$PROJECT_DIR$/my-app/src/pages" />
+      <recent name="$PROJECT_DIR$/my-app/src/images" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/my-app/src/css" />
       <recent name="$PROJECT_DIR$/my-app/src/pages" />
       <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$/my-app/src" />
       <recent name="$PROJECT_DIR$/my-app/public" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/my-app/src" />
-      <recent name="$PROJECT_DIR$/my-app" />
-      <recent name="$PROJECT_DIR$/my-app/src/pages" />
-      <recent name="$PROJECT_DIR$/my-app/src/images" />
-      <recent name="$PROJECT_DIR$/images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -303,9 +316,9 @@
     </option>
   </component>
   <component name="ToolWindowManager">
-    <frame x="557" y="23" width="1041" height="797" extended-state="0" />
+    <frame x="0" y="23" width="1598" height="797" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32941177" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21306278" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -489,7 +502,7 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="733">
+          <first_editor relative-caret-position="795">
             <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
           </first_editor>
           <second_editor />
