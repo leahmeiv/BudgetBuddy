@@ -9,13 +9,13 @@ The BudgetBuddy web application will allow individuals to track their online pur
 
 #### Completed By: Leah-Mei Villanueva
 
-#### Initialization 
+#### Initialization
 ###### Date: (02/04/2020 - 02/24/2020)
 - Created Github Repository
 - Created initial setup for code (ESlint, html files)
 
 ######  Date: (02/25/2020 - 03/08/2020)
-- Setup Semantic UI React 
+- Setup Semantic UI React
 
 #### Home Page
 ##### Date: (02/04/2020 - 02/24/2020)
@@ -36,13 +36,13 @@ The BudgetBuddy web application will allow individuals to track their online pur
 #### Completed By: Levy Jean Matsuda
 
 #### About Page
-- About page mockup 
+- About page mockup
 <img src="images/about-page-mockup.png" width="600" height="350">
 
 ##### Date: (03/09/2020 - 04/12/2020)
 
 ### Sign-in Page
-- created react design for sign in 
+- created react design for sign in
 <img src="images/login-page-react.png" width="600" height="350">
 
 ### Registration page
@@ -53,16 +53,16 @@ The BudgetBuddy web application will allow individuals to track their online pur
 - installed MongoDB, Express, Bycryptjs, jsonwebtoken, passport, validator, is-empty
 
 ### Build Server
-- created server.js file to create and build express app 
+- created server.js file to create and build express app
 - configured databases
   - expense API
   - users API
-- Created login and registration function 
+- Created login and registration function
 - Created functions to add, delete, and get expenses
 
-### Fuzz Testing 
-- Tested register functions 
-- Tested login functions 
+### Fuzz Testing
+- Tested register functions
+- Tested login functions
 - Tested expense functions (add, delete, get)
 
 
@@ -74,7 +74,14 @@ The BudgetBuddy web application will allow individuals to track their online pur
 #### App
 - Implemented routing between pages through the navigation bar
 
-## Pending Progress: 
+###### Date: (04/13/2020 - 04/26/2020)
+#### Expenses
+- Created UI of add-budget.js for user to insert spending data
+  - Implemented Date Picker for date selection
+- Created UI expense.js as template for viewing spending data 
+
+
+## Pending Progress:
 #### Leah-Mei Villanueva
 ###### Date: (02/04/2020 - 02/23/2020)
 - React setup for Sign up (completed 04/02/2020 LM)
@@ -87,7 +94,7 @@ The BudgetBuddy web application will allow individuals to track their online pur
 - Edit Sign in page/links and link to account (add error if no account)
 
 #### Sign Up Page
-- Edit sign up page/links and make it functional 
+- Edit sign up page/links and make it functional
 
 #### Other
 - Specific route to different pages
@@ -99,14 +106,14 @@ The BudgetBuddy web application will allow individuals to track their online pur
 - About page with React set-up (completed 03/07/2020 LV)
 
 ###### Date: (04/13/2020 - 04/26/2020)
-### Configuration 
+### Configuration
 - configure front-end and back-end connection
-- Configure user with their logged expenses 
+- Configure user with their logged expenses
 
 ### Client-end tasks
-- Add mask to password input field 
-- React component for expense list 
-- Configure protected routes 
+- Add mask to password input field
+- React component for expense list
+- Configure protected routes
 
 
 #### Sollie Garcia
@@ -118,8 +125,5 @@ The BudgetBuddy web application will allow individuals to track their online pur
 ###### Date: (02/24/2020 - 03/15/2020)
 - Implement routing
 - Convert/move HTML code from home and about files to component files for the navigation bar and footer menu
-###### Date: (03/16/2020 - MM/DD/YYYY)
-
-
-
-
+###### Date: (04/13/2020 - 04/26/2020)
+- Front-end Expense input and viewing
