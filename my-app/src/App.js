@@ -1,24 +1,37 @@
-// import React from 'react';
-// import ReactDOM from 'react-dom';
-// import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
-// import 'semantic-ui-css/semantic.css';
-// import Home from './pages/home.js';
-// import About from './pages/about.js';
-//
-//
-// class App extends React.Component {
-//   render() {
-//     return (
-//       <Router>
-//         <div>
-//
+import React from 'react';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import 'semantic-ui-css/semantic.css';
+import Home from './pages/home.js';
+import About from './pages/about.js';
+import NavBar from './components/Navbar';
+import Footer from './components/Footer';
+import Login from './pages/login.js';
+import Signup from './pages/signup.js'
+
+
+class App extends React.Component {
+  render() {
+    return (
+      <Router>
+        <div className='Site'>
+          <NavBar/>
+          <div className='Site-content'>
+            <Switch>
+              <Route exact path="/" component={Home}/>
+              <Route exact path="/about" component={About}/>
+              <Route exact path="/login" component={Login}/>
+              <Route exact path="/signup" component={Signup}/>
+            </Switch>
+          </div>
+          <Footer/>
+        </div>
+      </Router>
+
+
 //           <Switch>
-//             <Route exact path="/" component={Home}/>
 //             {/*<Route exact path="/userprofile" component={UserProfile}/>*/}
 //             {/*<Route path="/signin" component={Signin}/>*/}
 //             {/*<Route path="/signup" component={Signup}/>*/}
-//             <Route exact path="/home" component={Home}/>
-//             <Route path="/about" component={About}/>
 //             {/*<Route path="/createuserprofile" component={CreateUserProfile}/>*/}
 //
 //             {/*<ProtectedRoute path="/edituserprofile/:_id" component={EditUserProfile}/>*/}
@@ -31,10 +44,9 @@
 //             {/*<ProtectedRoute path="/signout" component={Signout}/>*/}
 //             {/*<Route component={NotFound}/>*/}
 //           </Switch>
-//         </div>
-//       </Router>
-//     );
-//   }
-// }
-//
-// export default App;
+
+    );
+  }
+}
+
+export default App;
