@@ -125,4 +125,5 @@ The BudgetBuddy web application will allow individuals to track their online pur
 ###### Date: (02/24/2020 - 03/15/2020)
 - Implement routing
 - Convert/move HTML code from home and about files to component files for the navigation bar and footer menu
-###### Date: (03/16/2020 - MM/DD/YYYY)
+###### Date: (04/13/2020 - 04/26/2020)
+- Front-end Expense input and viewing
