@@ -1,0 +1,13 @@
+.add-budget-bg {
+  background: #73e5c3;  /* fallback for old browsers 73E5C3 */
+  background: -webkit-linear-gradient(to right, #3e757a, #73e5c3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3e757a, #73e5c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+.form-text {
+  font-family: Helvetica, Arial, "sans-serif";
+  color: white;
+  padding-bottom: 2px;
+}
