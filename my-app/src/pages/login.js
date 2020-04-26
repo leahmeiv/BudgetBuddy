@@ -8,23 +8,30 @@ import '../css/login.css'
 
 class Login extends React.Component {
   // Initialize component states with properties for login
+
   constructor(props) {
     super(props);
 
     this.state = {
       isLoading: true,
+      token: '',
       email: '',
       password: '',
-      errors: {}
+      signInError: '',
     };
+
+    this.onChange = this.onChange.bind(this);
+    this.onSubmit = this.onSubmit.bind(this);
   }
+
+
 
   //handing changes in login fields
   onChange = e => {
     this.setState({
       [e.target.id]: e.target.value
     });
-  }
+  };
 
   //handling submission of login form
   onSubmit = e => {
@@ -37,12 +44,19 @@ class Login extends React.Component {
 
     console.log(user);
 
-   // axios.post('http://localhost:5000/api/user/login', user)
-     //.then(res => console.log(res.data))
-     //.catch(err => console.log(err));
-  }
+    axios.post('http://localhost:5000/api/user/login', user)
+     .then(res => console.log(res.data))
+     .catch(err => console.log(err));
+  };
 
   render() {
+    const {
+      isLoading,
+      token,
+      signInError,
+      email,
+      password
+    } = this.state;
 
     return (
       <div>
@@ -65,7 +79,7 @@ class Login extends React.Component {
                       type="text"
                       required
                       placeholder="Enter your email address"
-                      value={this.state.email}
+                      value={email}
                       onChange={this.onChange}
                       id="email"
                     />
@@ -77,7 +91,7 @@ class Login extends React.Component {
                       placeholder="Enter your password"
                       type="password"
                       required
-                      value={this.state.password}
+                      value={password}
                       onChange={this.onChange}
                       id="password"
                     />
