@@ -1,43 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f34d1c5d-e110-47ae-84a0-2dd10338e1b7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.meteor/.finished-upgraders" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.meteor/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.meteor/.id" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.meteor/packages" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.meteor/platforms" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.meteor/release" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.meteor/versions" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/client/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/client/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/client/main.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/imports/api/links.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/imports/ui/components/Footer.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/imports/ui/components/Navbar.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/imports/ui/css/about.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/imports/ui/css/home.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/imports/ui/css/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/imports/ui/css/signup.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/imports/ui/images/about-background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/imports/ui/images/github-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/imports/ui/images/home-background.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/imports/ui/images/menu-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/imports/ui/pages/About.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/imports/ui/pages/App.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/imports/ui/pages/Hello.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/imports/ui/pages/Home.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/imports/ui/pages/Info.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/imports/ui/pages/Login.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/imports/ui/pages/Signup.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/server/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tests/main.js" beforeDir="false" />
-    </list>
+    <list default="true" id="f34d1c5d-e110-47ae-84a0-2dd10338e1b7" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,14 +17,6 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>lebro</find>
-      <find>gif</find>
-      <find>sign</find>
-      <find>button</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -72,12 +28,6 @@
   </component>
   <component name="PhpServers">
     <servers />
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="533" />
-    <option name="y" value="23" />
-    <option name="width" value="907" />
-    <option name="height" value="797" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -148,6 +98,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="masterDetails">
     <states>
