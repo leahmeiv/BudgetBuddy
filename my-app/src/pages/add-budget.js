@@ -50,15 +50,15 @@ class AddBudget extends React.Component {
                 <Grid.Column>
                   <Form className="form-text">
                     <Form.Field className="form-text">
-                      <div className="form-text">Name of payment</div>
+                      <div className="form-text">Name of Payment</div>
                       <input placeholder="What did you pay for?"/>
                     </Form.Field>
                     <Form.Field>
                       <label>
-                        <div className="form-text">Type of Payment</div>
+                        <div className="form-text">Category of Expense</div>
                       </label>
                       <Dropdown
-                        placeholder='What is the type of payment?'
+                        placeholder='What did you pay for?'
                         fluid selection
                         options={categoryOptions}
                       />

@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import Login from './pages/login.js';
 import Signup from './pages/signup.js';
 import AddBudget from './pages/add-budget.js';
+import Expenses from './pages/expenses.js';
 
 
 class App extends React.Component {
@@ -23,6 +24,7 @@ class App extends React.Component {
               <Route exact path="/login" component={Login}/>
               <Route exact path="/signup" component={Signup}/>
               <Route exact path="/add-budget" component={AddBudget}/>
+              <Route exact path="/expenses" component={Expenses}/>
             </Switch>
           </div>
           <Footer/>
