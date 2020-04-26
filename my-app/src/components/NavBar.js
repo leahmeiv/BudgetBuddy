@@ -5,8 +5,6 @@ import Logo from '../images/menu-logo.png';
 
 export default class NavBar extends React.Component {
   render() {
-    const dropdownColor = { color: 'white' };
-
     return (
       <Container>
         <Menu borderless fixed className='ui fixed borderless top menu'>
@@ -18,7 +16,7 @@ export default class NavBar extends React.Component {
 
           <Dropdown className="ui simple dropdown item" text="EXPENSES">
             <Dropdown.Menu>
-              <Dropdown.Item style={dropdownColor} as={NavLink} exact to="/add-budget">Save a Payment</Dropdown.Item>
+              <Dropdown.Item as={NavLink} exact to="/add-budget">Save a Payment</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
 
@@ -39,7 +37,12 @@ export default class NavBar extends React.Component {
                     name='search'/>
           </Menu.Item>
           <Menu.Item>
-            <Icon name='user'/>
+            <Dropdown icon='user'>
+              <Dropdown.Menu>
+                <Dropdown.Item as={NavLink} exact to="/login">Login</Dropdown.Item>
+                <Dropdown.Item as={NavLink} exact to="/signup">Sign up</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
           </Menu.Item>
         </Menu>
       </Container>
