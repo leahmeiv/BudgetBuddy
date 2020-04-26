@@ -1,8 +1,8 @@
 import React from 'react';
 import '../css/about.css';
-import { Link, Redirect } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import 'semantic-ui-css/semantic.min.css';
-import { Container, Button, Form, Header, Message, Grid, Checkbox} from 'semantic-ui-react';
+import { Container, Button, Form, Header, Message, Grid} from 'semantic-ui-react';
 import '../css/signup.css'
 
 class Signup extends React.Component {
