@@ -2,11 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f34d1c5d-e110-47ae-84a0-2dd10338e1b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.meteor/packages" beforeDir="false" afterPath="$PROJECT_DIR$/app/.meteor/packages" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.meteor/versions" beforeDir="false" afterPath="$PROJECT_DIR$/app/.meteor/versions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/client/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/client/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/imports/ui/App.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/imports/ui/components/Footer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/imports/ui/components/NavBar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/imports/ui/css/about.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/imports/ui/css/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/imports/ui/images/about-background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/imports/ui/images/github-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/imports/ui/images/home-background.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/imports/ui/images/menu-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/imports/ui/pages/About.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/imports/ui/pages/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/client/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/client/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/imports/ui/App.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package.json" afterDir="false" />
     </list>
@@ -58,15 +67,19 @@
     <property name="js.meteor.library.cached" value="$PROJECT_DIR$/app/.meteor" />
     <property name="js.meteor.library.was.enabled" value="true" />
     <property name="js.meteor.project" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/imports/ui/images" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.jscs" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="/usr/local/lib/node_modules/eslint" />
     <property name="node.js.selected.package.jscs" value="" />
     <property name="node.js.selected.package.standard" value="/usr/local/lib/node_modules/eslint" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -77,19 +90,19 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/imports/ui/pages" />
+      <recent name="$PROJECT_DIR$/app/imports/ui" />
+      <recent name="$PROJECT_DIR$/app/imports/ui/imports" />
+      <recent name="$PROJECT_DIR$/app/imports/ui/Pages" />
+      <recent name="$PROJECT_DIR$/app/imports/ui/layout" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/imports/ui/css" />
       <recent name="$PROJECT_DIR$/app/imports/ui/images" />
+      <recent name="$PROJECT_DIR$/app/imports/ui/css" />
       <recent name="$PROJECT_DIR$/app/imports/ui/components" />
       <recent name="$PROJECT_DIR$/my-app/src/images" />
       <recent name="$PROJECT_DIR$/my-app/src/css" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/imports/ui/Pages" />
-      <recent name="$PROJECT_DIR$/app/imports/ui" />
-      <recent name="$PROJECT_DIR$/app/imports/ui/layout" />
-      <recent name="$PROJECT_DIR$/app/imports/startup/client" />
-      <recent name="$PROJECT_DIR$/app/imports/ui/images" />
     </key>
   </component>
   <component name="RunDashboard">
