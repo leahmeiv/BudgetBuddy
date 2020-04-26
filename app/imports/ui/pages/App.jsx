@@ -2,23 +2,25 @@ import React, {Component} from 'react';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import 'semantic-ui-css/semantic.css';
 import Home from './Home';
-//import About from './pages/about.js';
+import About from './About';
 import NavBar from '../components/Navbar';
 import Footer from '../components/Footer';
-//import Login from './pages/login.js';
-//import Signup from './pages/signup.js'
+import Login from './Login';
+import Signup from './Signup';
+
 
 class App extends Component {
   render() {
     return (
       <Router>
-        <div className='Site'>
+        <div>
           <NavBar/>
-          <div className='Site-content'>
             <Switch>
               <Route exact path="/" component={Home}/>
+              <Route exact path="/about" component={About}/>
+              <Route exact path="/login" component={Login}/>
+              <Route exact path="/signup" component={Signup}/>
             </Switch>
-          </div>
           <Footer/>
         </div>
       </Router>
