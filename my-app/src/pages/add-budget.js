@@ -5,6 +5,14 @@ import 'semantic-ui-css/semantic.min.css';
 import { Container, Button, Form, Header, Message, Grid, Dropdown, TextArea } from 'semantic-ui-react';
 import '../css/add-budget.css';
 
+/* Date Picker: https://github.com/Hacker0x01/react-datepicker
+ * the package needs to be installed via npm:
+ * npm install react-datepicker --save
+ * or via yarn:
+ * yarn add react-datepicker */
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
+
 const categoryOptions = [
   { value: 'Groceries', text: 'Groceries' },
   { value: 'Home and Auto', text: 'Home & Auto' },
@@ -17,6 +25,13 @@ const categoryOptions = [
 const msgMargin = { margin: '15px 0px 0px 0px' };
 
 class AddBudget extends React.Component {
+  /* https://github.com/Hacker0x01/react-datepicker */
+  state = { paymentDate: new Date() };
+  handleChange = date => {
+    this.setState({
+      paymentDate: date
+    });
+  };
 
   render() {
     return (
@@ -70,6 +85,11 @@ class AddBudget extends React.Component {
                         <label>
                           <div className="form-text">Date</div>
                         </label>
+                        {/* https://github.com/Hacker0x01/react-datepicker */}
+                        <DatePicker
+                          selected={this.state.paymentDate}
+                          onChange={this.handleChange}
+                        />
                       </Form.Field>
                     </Form>
                   </Grid.Row>
