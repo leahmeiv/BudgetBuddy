@@ -32,12 +32,6 @@ From here the user can can log in, or choose to become a member.
 
 ## Mockup Development
 
-This milestone began on November 6th, 2018 and was completed on Novemeber 14th, 2018.
-
-The main goal in milestone 1 is to complete mockups for a series of pages in UH Bazaar.  Development was done using Semantic
-UI React within a Meteor application.  The intial goal was to create mockups of a base set of application pages that would
-allow for functional site in minimal time. This included
-
 - Landing page
 - User Home Page
 - Admin Home Page
