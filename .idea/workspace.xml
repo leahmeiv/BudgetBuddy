@@ -1,98 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f34d1c5d-e110-47ae-84a0-2dd10338e1b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/task-description.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/.eslintrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/.meteor/.finished-upgraders" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/.meteor/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/.meteor/.id" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/.meteor/packages" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/.meteor/platforms" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/.meteor/release" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/.meteor/versions" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/client/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/client/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/client/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/api/stuff/Stuff.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/startup/client/Startup.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/startup/server/Accounts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/startup/server/Mongo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/startup/server/Publications.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/components/Footer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/components/NavBar.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/components/StuffItem.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/components/StuffItemAdmin.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/layouts/App.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/pages/About.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/pages/AddStuff.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/pages/EditStuff.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/pages/Landing.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/pages/ListStuff.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/pages/ListStuffAdmin.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/pages/NotFound.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/pages/Signin.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/pages/Signout.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/pages/Signup.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/public/images/meteor-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/public/themes/default/assets/fonts/brand-icons.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/public/themes/default/assets/fonts/brand-icons.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/public/themes/default/assets/fonts/brand-icons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/public/themes/default/assets/fonts/brand-icons.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/public/themes/default/assets/fonts/brand-icons.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/public/themes/default/assets/fonts/icons.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/public/themes/default/assets/fonts/icons.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/public/themes/default/assets/fonts/icons.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/public/themes/default/assets/fonts/icons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/public/themes/default/assets/fonts/icons.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/public/themes/default/assets/fonts/icons.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/public/themes/default/assets/fonts/outline-icons.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/public/themes/default/assets/fonts/outline-icons.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/public/themes/default/assets/fonts/outline-icons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/public/themes/default/assets/fonts/outline-icons.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/public/themes/default/assets/fonts/outline-icons.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/public/themes/default/assets/images/flags.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/server/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/settings.development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/add-page.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/add-stuff-page.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/admin-landing-page.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/admin-list-stuff-page.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/edit-page.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/edit-stuff-page.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/landing-after-login-page.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/landing-page.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/list-page.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/list-stuff-page.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/meteor-application-template-react-youtube.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/meteor-application-template-youtube.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/not-authorized-page.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/register-page.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/signin-page.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/public/about-background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/public/github-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/public/home-background.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/public/menu-logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/images/about-background.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/images/about-background.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/images/github-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/images/github-logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/images/home-background.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/images/home-background.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/images/menu-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/images/menu-logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/pages/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/pages/about.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/pages/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/pages/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/pages/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/pages/login.js" afterDir="false" />
-    </list>
+    <list default="true" id="f34d1c5d-e110-47ae-84a0-2dd10338e1b7" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,20 +63,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/imports/ui/layouts/App.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="297">
-                  <caret line="30" column="53" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/imports/ui/components/NavBar.jsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="361">
-                  <caret line="22" column="47" lean-forward="true" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+                <state relative-caret-position="687">
+                  <caret line="46" column="34" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -176,6 +73,18 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/imports/ui/components/NavBar.jsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="375">
+                  <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/my-app/src/components/Footer.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="466">
@@ -218,8 +127,11 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/imports/ui/components/Footer.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="15">
-                  <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
+                <state relative-caret-position="329">
+                  <caret line="42" column="32" lean-forward="true" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -485,7 +397,7 @@
     <layout>
       <window_info id="Designer" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.32935154" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32935154" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="Version Control" />
@@ -631,16 +543,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/imports/ui/layouts/App.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="30" column="53" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/css/signup.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -712,16 +614,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/imports/ui/components/NavBar.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="22" column="47" lean-forward="true" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/node_modules/semantic-ui-react/dist/commonjs/collections/Grid/Grid.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="637">
@@ -739,10 +631,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/imports/ui/layouts/App.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="687">
+          <caret line="46" column="34" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/imports/ui/components/NavBar.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/imports/ui/components/Footer.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
+        <state relative-caret-position="329">
+          <caret line="42" column="32" lean-forward="true" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
