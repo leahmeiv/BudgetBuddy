@@ -9,6 +9,7 @@
     * [Milestone 5: (04/02/2020 - 04/26/2020)](#milestone-5)
 * [Developer Guide](#developer-guide)
   * [Installation](#installation)
+  * [Links](#links)
 
 # About BudgetBuddy
 The BudgetBuddy meteor application will allow individuals to track their online purchases and find the total amount of money they spend overtime 
@@ -182,7 +183,7 @@ You are now ready to start contributing to BudgetBuddy!
 - ![#feffff](https://placehold.it/15/feffff/000000?text=+) `#feffff`
 
 # Links
-[Github Repo](https://github.com/leahmeiv/BudgetBuddy)
-[Final Documentation File](https://github.com/leahmeiv/BudgetBuddy/blob/master/README.md)
-[Final Release]()
-[Wiki Page](https://github.com/leahmeiv/BudgetBuddy/wiki)
+[Github Repo](https://github.com/leahmeiv/BudgetBuddy)  
+[Final Documentation File](https://github.com/leahmeiv/BudgetBuddy/blob/master/README.md)  
+[Final Release]()  
+[Wiki Page](https://github.com/leahmeiv/BudgetBuddy/wiki)  
