@@ -2,22 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f34d1c5d-e110-47ae-84a0-2dd10338e1b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/App.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/components/Footer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/components/NavBar.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/css/about.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/css/home.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/images/about-background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/images/github-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/images/home-background.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/images/menu-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/pages/About.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/pages/Home.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/imports/ui/css/add-budget.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/imports/ui/css/expenses.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/imports/ui/pages/AddBudget.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/imports/ui/pages/Expenses.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/client/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/client/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/client/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/client/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/imports/ui/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/imports/ui/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/imports/ui/App.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -130,6 +122,18 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/app/imports/ui/pages/AddBudget.jsx</url>
+          <line>35</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="masterDetails">
     <states>
