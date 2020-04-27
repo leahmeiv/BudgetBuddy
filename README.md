@@ -180,3 +180,9 @@ You are now ready to start contributing to BudgetBuddy!
 - ![#3aafa9](https://placehold.it/15/3aafa9/000000?text=+) `#3aafa9`
 - ![#def2f1](https://placehold.it/15/def2f1/000000?text=+) `#def2f1`
 - ![#feffff](https://placehold.it/15/feffff/000000?text=+) `#feffff`
+
+# Links
+[Github Repo](https://github.com/leahmeiv/BudgetBuddy)
+[Final Documentation File](https://github.com/leahmeiv/BudgetBuddy/blob/master/README.md)
+[Final Release]()
+[Wiki Page](https://github.com/leahmeiv/BudgetBuddy/wiki)
