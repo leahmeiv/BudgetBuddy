@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f34d1c5d-e110-47ae-84a0-2dd10338e1b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/pages/BudgetDash.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/client/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/client/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/imports/ui/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/imports/ui/components/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/imports/ui/components/NavBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/imports/ui/components/NavBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/imports/ui/layouts/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/imports/ui/layouts/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/imports/ui/pages/Landing.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/imports/ui/pages/Landing.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/imports/ui/pages/BudgetDash.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/imports/ui/pages/BudgetDash.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

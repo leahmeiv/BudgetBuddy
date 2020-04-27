@@ -25,7 +25,6 @@ class BudgetDash extends React.Component {
                 <Table.Cell collapsing>
                   <Icon name='dollar sign' /> Food
                 </Table.Cell>
-                <Table.Cell>Gym Membership</Table.Cell>
                 <Table.Cell collapsing textAlign='right'>
                   $35
                 </Table.Cell>
@@ -33,17 +32,16 @@ class BudgetDash extends React.Component {
 
               <Table.Row>
                 <Table.Cell>
-                  <Icon name='dollar sign' /> build
+                  <Icon name='dollar sign' /> Books
                 </Table.Cell>
-                <Table.Cell>Books</Table.Cell>
                 <Table.Cell textAlign='right'>$34</Table.Cell>
               </Table.Row>
               <Table.Row>
                 <Table.Cell>
                   <Icon name='dollar sign' /> Clothes
                 </Table.Cell>
-                <Table.Cell>$200</Table.Cell>
-                <Table.Cell textAlign='right'>10 hours ago</Table.Cell>
+                <Table.Cell textAlign='right'>$200</Table.Cell>
+
               </Table.Row>
 
             </Table.Body>
