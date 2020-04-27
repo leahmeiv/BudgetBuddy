@@ -3,91 +3,66 @@
 * [About BudgetBuddy](#about-budgetbuddy)
 * [User Guide](#user-guide)
 * [Development History](#development-history)
+    * [Milestone 1: (02/04/2020 - 02/24/2020)](#milestone-1)
+    * [Milestone 2: (02/25/2020 - 03/08/2020)](#milestone-2)
+    * [Milestone 3: (03/09/2020 - 04/12/2020)](#milestone-3)
+    * [Milestone 4: (02/25/2020 - 03/15/2020)](#milestone-4)
+    * [Milestone 5: (04/13/2020 - 04/26/2020)](#milestone-5)
 * [Developer Guide](#developer-guide)
   * [Installation](#installation)
-  * [Github Workflow](#github-workflow)
 
 # About BudgetBuddy
-
-
-BudgetBuddy is a meteor application that....
+The BudgetBuddy web application will allow individuals to track their online purchases and find the total amount of money they spend in a month. 
 
 # User Guide
+### [Home Page](http://budgetbuddy.meteorapp.com/#/)
+#### The home page when there is no user
 
-### [Landing Page](http://budgetbuddy.meteorapp.com/#/)
-#### The landing page when there is no user
-
-<img src="images/landing-page-without-user.png"/>
+<img src="images/home-page-without-user.png"/>
 
 From here the user can can log in, or choose to become a member.
 
-##### The landing page greets the user, with a brief overview of what the application intends to accomplish.
+##### The home page greets the user, with a brief overview of what the application intends to accomplish.
 
-<img src="images/landing-page-with-user.png"/>
+<img src="images/home-page-with-user.png"/>
 
-<img src="images/user-landing-page.png"/>
-
+<img src="images/user-home-page.png"/>
 
 # Development History
 
-## Mockup Development
-
-- Landing page
-- User Home Page
-- Admin Home Page
-
-## Functional Implementation
-
-## Beyond the Basics
-
-# BudgetBuddy
-The BudgetBuddy web application will allow individuals to track their online purchases and find the total amount of money they spend in a month.
-
-## Progress Completion
-#### Whole Team
+# Milestone 1
+## Team Discussions
 - Discussed with group and created an informational paper on what our project will be about.
 - Created Github repository
 - Began creating HTML files to start creating the base design of the web application
 
-#### Completed By: Leah-Mei Villanueva
-
-#### Initialization
-###### Date: (02/04/2020 - 02/24/2020)
+## Initializaton 
+### Completed by: Leah-Mei Villanueva
 - Created Github Repository
 - Created initial setup for code (ESlint, html files)
 
-######  Date: (02/25/2020 - 03/08/2020)
-- Setup Semantic UI React
-
-#### Home Page
-##### Date: (02/04/2020 - 02/24/2020)
+## Mockup Development 
 - Created html mockup
 <img src="images/home-page-mockup.png" width="600" height="350">
 
-##### Date: (02/25/2020 - 03/08/2020)
-- Converted to react with new design
-<img src="images/home-page-react.png" width="600" height="350">
-
-#### About Page
-##### Date: (02/25/2020 - 03/08/2020)
-- Converted to react with new design
-<img src="images/about-page-react.png" width="600" height="350">
-
-#### Completed By: Sollie Garcia
-
-#### Completed By: Levy Jean Matsuda
-
-#### About Page
+### Completed by: L
 - About page mockup
 <img src="images/about-page-mockup.png" width="600" height="350">
 
-##### Date: (03/09/2020 - 04/12/2020)
+# Milestone 2 
+### Completed by Leah-Mei Villanueva
+- Setup Semantic UI React
+- Converted to react with new design
+<img src="images/home-page-react.png" width="600" height="350">
+- Converted to react with new design
+<img src="images/about-page-react.png" width="600" height="350">
 
-### Sign-in Page
+# Milestone 3 
+## Functional Implementation
+### Completed by: Levy Jean Matsuda
 - created react design for sign in
 <img src="images/login-page-react.png" width="600" height="350">
 
-### Registration page
 - created react design for registration page
 <img src="images/reg-page-react.png" width="600" height="350">
 
@@ -107,21 +82,22 @@ The BudgetBuddy web application will allow individuals to track their online pur
 - Tested login functions
 - Tested expense functions (add, delete, get)
 
+# Milestone 4 
+### Completed By: Leisha Soberano-Keawemauhili
 
-
-#### Completed By: Leisha Soberano-Keawemauhili
-##### Date: (02/25/2020 - 03/15/2020)
 #### Components
 - Converted the TopMenu and FooterMenu into components for pages
+
 #### App
 - Implemented routing between pages through the navigation bar
 
-###### Date: (04/13/2020 - 04/26/2020)
+# Milestone 5 
+### Completed By: Leisha Soberano-Keawemauhili
+
 #### Expenses
 - Created UI of add-budget.js for user to insert spending data
   - Implemented Date Picker for date selection
 - Created UI expense.js as template for viewing spending data
-
 
 ## Pending Progress:
 #### Leah-Mei Villanueva
