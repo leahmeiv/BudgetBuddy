@@ -1,3 +1,51 @@
+# Table of Contents
+
+* [About BudgetBuddy](#about-budgetbuddy)
+* [User Guide](#user-guide)
+* [Development History](#development-history)
+* [Developer Guide](#developer-guide)
+  * [Installation](#installation)
+  * [Github Workflow](#github-workflow)
+
+# About BudgetBuddy
+
+
+BudgetBuddy is a meteor application that....
+
+# User Guide
+
+### [Landing Page](http://budgetbuddy.meteorapp.com/#/)
+#### The landing page when there is no user
+
+<img src="images/landing-page-without-user.png"/>
+
+From here the user can can log in, or choose to become a member.
+
+##### The landing page greets the user, with a brief overview of what the application intends to accomplish.
+
+<img src="images/landing-page-with-user.png"/>
+
+<img src="images/user-landing-page.png"/>
+
+
+# Development History
+
+## Mockup Development
+
+This milestone began on November 6th, 2018 and was completed on Novemeber 14th, 2018.
+
+The main goal in milestone 1 is to complete mockups for a series of pages in UH Bazaar.  Development was done using Semantic
+UI React within a Meteor application.  The intial goal was to create mockups of a base set of application pages that would
+allow for functional site in minimal time. This included
+
+- Landing page
+- User Home Page
+- Admin Home Page
+
+## Functional Implementation
+
+## Beyond the Basics
+
 # BudgetBuddy
 The BudgetBuddy web application will allow individuals to track their online purchases and find the total amount of money they spend in a month.
 
@@ -78,7 +126,7 @@ The BudgetBuddy web application will allow individuals to track their online pur
 #### Expenses
 - Created UI of add-budget.js for user to insert spending data
   - Implemented Date Picker for date selection
-- Created UI expense.js as template for viewing spending data 
+- Created UI expense.js as template for viewing spending data
 
 
 ## Pending Progress:
@@ -127,3 +175,54 @@ The BudgetBuddy web application will allow individuals to track their online pur
 - Convert/move HTML code from home and about files to component files for the navigation bar and footer menu
 ###### Date: (04/13/2020 - 04/26/2020)
 - Front-end Expense input and viewing
+
+
+# Developer Guide
+### Want to join forces? Here's how!
+
+#### Installation
+First, [install meteor](https://www.meteor.com/install)
+
+Second, [Fork us on github!](https://github.com/leahmeiv/BudgetBuddy) and clone the repo to your favorite laptop.
+
+Once in the main directory simply...
+
+```asp
+cd app
+```
+After which you will need to install the required node libraries...
+```asp
+meteor npm intall
+```
+...as well as the following for the confirm box module...
+```
+npm install react-confirm-alert --save
+```
+```asp
+npm install semantic-ui-react semantic-ui-css --save
+
+```
+The first time starting the app intializes some default data.  The output should look something like this...
+```asp
+meteor npm run start
+
+> app@ start /Users/admin/github/budgetbuddy/budgetbuddy/app
+> meteor run
+
+[[[[[ ~/github/budgetbuddy/budgetbuddy/app ]]]]]    
+
+=> Started proxy.                             
+=> Started MongoDB.          
+=> Started your app.
+```
+
+**That's it!**
+You are now ready to start contributing to BudgetBuddy!
+
+#### The color scheme used for BudgetBuddy is [Serio Verify](https://www.awwwards.com/sites/serio-verify)
+
+- ![#17252a](https://placehold.it/15/17252a/000000?text=+) `#17252a`
+- ![#2b7a78](https://placehold.it/15/2b7a78/000000?text=+) `#2b7a78`
+- ![#3aafa9](https://placehold.it/15/3aafa9/000000?text=+) `#3aafa9`
+- ![#def2f1](https://placehold.it/15/def2f1/000000?text=+) `#def2f1`
+- ![#feffff](https://placehold.it/15/feffff/000000?text=+) `#feffff`
