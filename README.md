@@ -1,6 +1,5 @@
 # Table of Contents
 * [About BudgetBuddy](#about-budgetbuddy)
-*/ * [User Guide](#user-guide) /*
 * [Development History](#development-history)
     * [Milestone 1: (01/14/2020 - 01/29/2020)](#milestone-1)
     * [Milestone 2: (02/04/2020 - 02/23/2020)](#milestone-2)
@@ -71,27 +70,28 @@ The BudgetBuddy meteor application will allow individuals to track their online 
 ### Completed By: Leisha Soberano-Keawemauhili
 
 #### Components
-- Converted the TopMenu and FooterMenu into components for pages
+- Converted the TopMenu and FooterMenu into seperate components for pages
 
 #### App
-- Implemented routing between pages through the navigation bar
+- Begin implementation of routing between pages through the navigation bar
 
 # Milestone 5 
 ### Completed By: Leisha Soberano-Keawemauhili
 
 #### Expenses
+- Front-end Expense input and viewing
 - Created UI of add-budget.js for user to insert spending data
   - Implemented Date Picker for date selection
 - Created UI expense.js as template for viewing spending data
 
-## Pending Progress:
-#### Leah-Mei Villanueva
-###### Date: (02/04/2020 - 02/23/2020)
-- React setup for Sign up (completed 04/02/2020 LM)
-- React setup for Sign in (completed 04/02/2020 LM)
-- React setup for About page (completed 03/07/2020 LV)
-- React setup for Home page (completed 03/07/2020 LV)
+### Leah
+- Convert all pages to meteor and fixed routing
 
+### Levy
+- Database
+
+
+## Pending Progress:
 ###### Date: (02/24/2020 - 03/08/2020)
 #### Login Page
 - Edit Sign in page/links and link to account (add error if no account)
@@ -105,8 +105,7 @@ The BudgetBuddy meteor application will allow individuals to track their online 
 - Run app as regular website
 
 #### Levy Jean Matsuda
-###### Date: (02/04/2020 - 02/23/2020)
-- About page with React set-up (completed 03/07/2020 LV)
+
 
 ###### Date: (04/13/2020 - 04/26/2020)
 ### Configuration
@@ -117,20 +116,6 @@ The BudgetBuddy meteor application will allow individuals to track their online 
 - Add mask to password input field
 - React component for expense list
 - Configure protected routes
-
-
-#### Sollie Garcia
-###### Date: (02/04/2020 - 02/23/2020)
-###### (02/24/2020 - 03/08/2020)
-
-#### Leisha Soberano-Keawemauhili
-###### Date: (02/04/2020 - 02/23/2020)
-###### Date: (02/24/2020 - 03/15/2020)
-- Implement routing
-- Convert/move HTML code from home and about files to component files for the navigation bar and footer menu
-###### Date: (04/13/2020 - 04/26/2020)
-- Front-end Expense input and viewing
-
 
 # Developer Guide
 ### Want to join forces? Here's how!
