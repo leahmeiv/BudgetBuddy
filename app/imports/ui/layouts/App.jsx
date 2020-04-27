@@ -16,19 +16,20 @@ import Signin from '../pages/Signin';
 import Signup from '../pages/Signup';
 import Signout from '../pages/Signout';
 import About from '../pages/About';
+import BudgetDash from '../pages/BudgetDash';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
   render() {
     return (
         <Router>
-          <div>
             <NavBar/>
             <Switch>
               <Route exact path="/" component={Landing}/>
               <Route path="/about" component={About}/>
               <Route path="/signin" component={Signin}/>
               <Route path="/signup" component={Signup}/>
+              <Route path="/budgetdash" component={BudgetDash}/>
               <ProtectedRoute path="/list" component={ListStuff}/>
               <ProtectedRoute path="/add" component={AddStuff}/>
               <ProtectedRoute path="/edit/:_id" component={EditStuff}/>
@@ -37,7 +38,6 @@ class App extends React.Component {
               <Route component={NotFound}/>
             </Switch>
             <Footer/>
-          </div>
         </Router>
     );
   }

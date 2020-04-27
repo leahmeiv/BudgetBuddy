@@ -262,7 +262,6 @@ body{
   padding-left: 300px;
 }
 
-
 /*login page*/
 .login-bg {
   background: #2980b9;  /* fallback for old browsers */
@@ -293,3 +292,21 @@ body{
   padding-top: 150px;
   padding-bottom: 50px;
 }
+
+.expenses-bg {
+  background: #5ebcae;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #366b75, #5ebcae);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #366b75, #5ebcae); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+.landing-bg {
+  background: url(../public/images/home-background.jpeg);
+  background-size: cover;
+
+}
+
+
+
+

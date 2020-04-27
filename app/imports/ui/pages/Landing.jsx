@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Image, Button } from 'semantic-ui-react';
+import { Image, Button,Container } from 'semantic-ui-react';
 import { NavLink } from 'react-router-dom';
 
 
@@ -7,21 +7,21 @@ import { NavLink } from 'react-router-dom';
 class Landing extends React.Component {
   render() {
     return (
-        <Grid fluid container>
-          <Image  className="ui fluid image"
-                 src={'images/home-background.jpeg'}/>
+        <Container className="landing-bg" >
+          <Image  size='massive' className="ui fluid image"
+                  src={'images/home-background.jpeg'}/>
           <p className="slogan1">
             <b>BE MY BUDGET BUDDY!</b>
           </p>
           <p className="slogan2">
             It's time to see how much you have spent...</p>
 
-          <Button className="ui button one" primary as={NavLink} exact to="/login">
+          <Button className="ui button one" primary as={NavLink} exact to="/signin">
             Login</Button>
           <Button className="ui button two" primary as={NavLink} exact to="/signup">
             Sign Up
           </Button>
-        </Grid>
+        </Container>
     );
   }
 }

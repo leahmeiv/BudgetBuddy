@@ -6,7 +6,7 @@ class Footer extends React.Component {
   render() {
     const divStyle = { paddingTop: '15px' };
     return (
-      <Container className="footer-background">
+      <Container className="footer-background" Fitted>
         <Grid divided='vertically'>
           <Grid.Row internally celled columns={3}>
             <Grid.Column>
