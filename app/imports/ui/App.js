@@ -1,34 +1,35 @@
 import React, { Component } from 'react';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
+import NavBar from './components/NavBar';
+import Footer from './components/Footer';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
+//import AddBudget from './pages/AddBudget';
+//import Expenses from './pages/Expenses';
 
-import Task from './Task.js';
 
 // App component - represents the whole app
 export default class App extends Component {
-  getTasks() {
-    return [
-      { _id: 1, text: 'This is task 1' },
-      { _id: 2, text: 'This is task 2' },
-      { _id: 3, text: 'This is task 3' },
-    ];
-  }
-
-  renderTasks() {
-    return this.getTasks().map((task) => (
-      <Task key={task._id} task={task} />
-    ));
-  }
 
   render() {
     return (
-      <div className="container">
-        <header>
-          <h1>Todo List</h1>
-        </header>
+      <Router>
+        <div className="container">
+          <NavBar />
+          <Switch>
+          <Route exact path="/" component={Home}/>
+            <Route exact path="/about" component={About}/>
+            <Route exact path="/login" component={Login}/>
+            <Route exact path="/signup" component={Signup}/>
+          </Switch>
+          <Footer />
+        </div>
 
-        <ul>
-          {this.renderTasks()}
-        </ul>
-      </div>
+
+      </Router>
+
     );
   }
 }
