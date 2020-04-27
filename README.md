@@ -147,7 +147,7 @@ cd app
 ```
 After which you will need to install the required node libraries...
 ```asp
-meteor npm intall
+meteor npm install
 ```
 ...as well as the following for the confirm box module...
 ```
@@ -157,7 +157,7 @@ npm install react-confirm-alert --save
 npm install semantic-ui-react semantic-ui-css --save
 
 ```
-The first time starting the app intializes some default data.  The output should look something like this...
+The first time starting the app initializes some default data.  The output should look something like this...
 ```asp
 meteor npm run start
 
@@ -173,6 +173,12 @@ meteor npm run start
 
 **That's it!**
 You are now ready to start contributing to BudgetBuddy!
+
+Optionally, you may use other third-party dependencies. Third party dependencies can be installed: 
+```asp
+meteor npm install --save [name-of-dependency]
+```
+
 
 #### The color scheme used for BudgetBuddy is [Serio Verify](https://www.awwwards.com/sites/serio-verify)
 

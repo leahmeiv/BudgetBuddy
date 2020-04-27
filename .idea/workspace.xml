@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f34d1c5d-e110-47ae-84a0-2dd10338e1b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/components/Footer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/components/NavBar.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/css/about.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/css/home.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/css/signup.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/images/about-background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/images/github-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/images/home-background.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/images/menu-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/pages/About.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/pages/Home.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/pages/Login.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/imports/ui/pages/Signup.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/imports/ui/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/imports/ui/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/css/signup.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/css/signup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,6 +104,16 @@
       </list>
     </option>
   </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -141,7 +134,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app/imports/ui/pages/AddBudget.jsx</url>
           <line>35</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
