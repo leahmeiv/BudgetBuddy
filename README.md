@@ -1,32 +1,17 @@
 # Table of Contents
-
 * [About BudgetBuddy](#about-budgetbuddy)
-* [User Guide](#user-guide)
+*/ * [User Guide](#user-guide) /*
 * [Development History](#development-history)
-    * [Milestone 1: (02/04/2020 - 02/24/2020)](#milestone-1)
-    * [Milestone 2: (02/25/2020 - 03/08/2020)](#milestone-2)
-    * [Milestone 3: (03/09/2020 - 04/12/2020)](#milestone-3)
-    * [Milestone 4: (02/25/2020 - 03/15/2020)](#milestone-4)
-    * [Milestone 5: (04/13/2020 - 04/26/2020)](#milestone-5)
+    * [Milestone 1: (01/14/2020 - 01/29/2020)](#milestone-1)
+    * [Milestone 2: (02/04/2020 - 02/23/2020)](#milestone-2)
+    * [Milestone 3: (02/25/2020 - 03/15/2020)](#milestone-3)
+    * [Milestone 4: (03/16/2020 - 04/12/2020)](#milestone-4)
+    * [Milestone 5: (04/02/2020 - 04/26/2020)](#milestone-5)
 * [Developer Guide](#developer-guide)
   * [Installation](#installation)
 
 # About BudgetBuddy
-The BudgetBuddy web application will allow individuals to track their online purchases and find the total amount of money they spend in a month. 
-
-# User Guide
-### [Home Page](http://budgetbuddy.meteorapp.com/#/)
-#### The home page when there is no user
-
-<img src="images/home-page-without-user.png"/>
-
-From here the user can can log in, or choose to become a member.
-
-##### The home page greets the user, with a brief overview of what the application intends to accomplish.
-
-<img src="images/home-page-with-user.png"/>
-
-<img src="images/user-home-page.png"/>
+The BudgetBuddy meteor application will allow individuals to track their online purchases and find the total amount of money they spend overtime 
 
 # Development History
 
@@ -45,7 +30,6 @@ From here the user can can log in, or choose to become a member.
 - Created html mockup
 <img src="images/home-page-mockup.png" width="600" height="350">
 
-### Completed by: L
 - About page mockup
 <img src="images/about-page-mockup.png" width="600" height="350">
 
