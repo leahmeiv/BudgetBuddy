@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Image, Grid, List, Icon } from 'semantic-ui-react';
-import GithubLogo from '../images/github-logo.png';
+import GithubLogo from '../../public/github-logo.png';
 
 export default class Footer extends React.Component {
   render() {
@@ -34,6 +34,7 @@ export default class Footer extends React.Component {
                   <Image src={GithubLogo}/>Github Repository</List.Item>
               </List>
             </Grid.Column>
+
           </Grid.Row>
         </Grid>
         <Grid>

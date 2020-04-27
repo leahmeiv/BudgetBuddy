@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/home.css';
-import HomeBackground from '../images/home-background.jpeg';
+import HomeBackground from '../../public/home-background.jpeg';
 import { Container, Image, Button } from 'semantic-ui-react';
 import { NavLink } from 'react-router-dom';
 
