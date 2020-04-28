@@ -36,18 +36,15 @@ Meteor.methods({
     }
     if (role === 'user') {
       Roles.addUsersToRoles(userID, 'user');
+
       const owner = email;
-      const budget = '0';
+      const budget = 0;
       const firstName = first;
       const lastName = last;
-      const password = password;
-      const email = email;
 
       User.insert({
         firstName: firstName,
         lastName: lastName,
-        email: email,
-        password: password,
         budget: budget,
         owner: owner,
       });
