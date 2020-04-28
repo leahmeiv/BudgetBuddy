@@ -38,8 +38,8 @@ class BudgetDash extends React.Component {
 
                   <Grid.Row verticalAlign='middle'>
                     <Grid.Column>
-                      <Header icon>
-                        Set Budget
+                      <Header>
+                        Set Budget 
                         <Icon name='money bill alternate outline' />
                       </Header>
                     </Grid.Column>
