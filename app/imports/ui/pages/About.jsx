@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Image } from 'semantic-ui-react';
+import { Container, Image } from 'semantic-ui-react';
 import { NavLink } from 'react-router-dom';
 
 
@@ -7,10 +7,11 @@ import { NavLink } from 'react-router-dom';
 class About extends React.Component {
   render() {
     return (
-        <Grid fluid container>
-          <Image  className="ui fluid image"
-                  src={'images/about-background.png'}/>
+      <div>
+        <Image  className="stretch"
+                src={'images/about-background.png'}/>
 
+        <Container>
           <p className="slogan1">
             <b>ABOUT BUDGET BUDDY</b>
           </p>
@@ -19,7 +20,8 @@ class About extends React.Component {
             report based off of your expenses. Compiled reports contain a total of your expenses and report the user's
             spending habits. All you have to do is log down your online expenses and we will do the rest.
           </p>
-        </Grid>
+        </Container>
+      </div>
     );
   }
 }

@@ -303,10 +303,18 @@ body{
 
 .landing-bg {
   background: url(../public/images/home-background.jpeg);
-  background-size: cover;
-
+  background-size: Cover;
+  background-repeat: repeat;
+}
+#background {
+  width: 100%;
+  position: absolute;
+  left: 0px;
 }
 
+.stretch {
+  min-width:100%; width:auto;
+}
 
 
 

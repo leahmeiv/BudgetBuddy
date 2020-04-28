@@ -7,9 +7,11 @@ import { NavLink } from 'react-router-dom';
 class Landing extends React.Component {
   render() {
     return (
-        <Container className="landing-bg" >
-          <Image  size='massive' className="ui fluid image"
-                  src={'images/home-background.jpeg'}/>
+
+      <div>
+        <Image className="stretch" size='massive'
+               src={'images/home-background.jpeg'}/>
+        <Container >
           <p className="slogan1">
             <b>BE MY BUDGET BUDDY!</b>
           </p>
@@ -22,6 +24,7 @@ class Landing extends React.Component {
             Sign Up
           </Button>
         </Container>
+      </div>
     );
   }
 }

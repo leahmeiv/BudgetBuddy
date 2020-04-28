@@ -17,7 +17,7 @@ class Signup extends React.Component {
   /** Update the form controls each time the user interacts with them. */
   handleChange = (e, { name, value }) => {
     this.setState({ [name]: value });
-  }
+  };
 
   /** Handle Signup submission. Create user account and a profile entry, then redirect to the home page. */
   submit = () => {
@@ -30,7 +30,7 @@ class Signup extends React.Component {
         this.setState({ error: '', redirectToReferer: true });
       }
     });
-  }
+  };
 
   /** Display the signup form. Redirect to add page after successful registration and login. */
   render() {
@@ -43,11 +43,32 @@ class Signup extends React.Component {
       <Container fluid className="signup-bg">
         <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
           <Grid.Column>
-            <Header size="huge" textAlign="center">
-              Register your account
+            <Header size="huge" textAlign="center" inverted>
+              Register your account!
             </Header>
             <Form onSubmit={this.submit}>
               <Segment stacked>
+                <Grid column={2} centered>
+                  <Grid.Row>
+                  <Grid.Column width={8}>
+                    <Form.Input
+                      label="First Name"
+                      name="firstName"
+                      type="String"
+                      placeholder="First Name"
+                      onChange={this.handleChange}
+                    />
+                    <Form.Input
+                      label="Last Name"
+                      name="lastName"
+                      placeholder="Last Name"
+                      type="String"
+                      onChange={this.handleChange}
+                    />
+
+                  </Grid.Column>
+
+                  <Grid.Column width={8}>
                 <Form.Input
                   label="Email"
                   icon="user"
@@ -66,7 +87,13 @@ class Signup extends React.Component {
                   type="password"
                   onChange={this.handleChange}
                 />
-                <Form.Button content="Submit"/>
+                  </Grid.Column>
+                  </Grid.Row>
+
+                  <Grid.Row>
+                    <Form.Button content="Submit"/>
+                  </Grid.Row>
+                </Grid>
               </Segment>
             </Form>
             <Message>

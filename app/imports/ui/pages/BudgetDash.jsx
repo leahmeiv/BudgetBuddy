@@ -1,6 +1,10 @@
 import React from 'react';
-import {Table, Icon, Container, Grid, Header} from 'semantic-ui-react';
-import { NavLink } from 'react-router-dom';
+import {Table, Icon, Container, Grid, Header, Segment, Divider} from 'semantic-ui-react';
+//import { NavLink } from 'react-router-dom';
+//import Expense from '../components/Expense';
+//import { withTracker } from 'meteor/react-meteor-data';
+//import PropTypes from 'prop-types';
+//import StuffItem from '../components/StuffItem';
 
 
 /** A simple static component to render some text for the landing page. */
@@ -8,53 +12,55 @@ class BudgetDash extends React.Component {
 
 
   render() {
+    /*return (this.props.ready) ? this.renderPage() : <Loader active>Getting data</Loader>;
+  } */
+  /*renderPage() { */
+      return (
+        <Container className="expenses-bg" fluid>
+          <Grid columns={2} divided centered padded>
+            <Grid.Column width={8} centered>
+              <Header as="h2" textAlign="center" inverted>How much have you spent?</Header>
+              <Table celled>
+                <Table.Header>
+                  <Table.Row>
+                    <Table.HeaderCell>Expense Name</Table.HeaderCell>
+                    <Table.HeaderCell><Icon name='dollar sign'/>Cost</Table.HeaderCell>
+                  </Table.Row>
+                </Table.Header>
+              </Table>
+            </Grid.Column>
 
-    return (
-      <Container className="expenses-bg" fluid>
-      <Grid columns={2} divided centered padded>
-        <Grid.Column width={8} centered>
-          <Table celled striped>
-            <Table.Header>
-              <Table.Row>
-                <Table.HeaderCell colSpan='3'>Expenses</Table.HeaderCell>
-              </Table.Row>
-            </Table.Header>
+            <Grid.Column>
+              <Header as='h1' inverted textAlign="center">Current Budget: </Header>
+              <Segment placeholder>
+                <Grid columns={2} stackable textAlign='center'>
+                  <Divider vertical>VS</Divider>
 
-            <Table.Body>
-              <Table.Row>
-                <Table.Cell collapsing>
-                  <Icon name='dollar sign' /> Food
-                </Table.Cell>
-                <Table.Cell collapsing textAlign='right'>
-                  $35
-                </Table.Cell>
-              </Table.Row>
+                  <Grid.Row verticalAlign='middle'>
+                    <Grid.Column>
+                      <Header icon>
+                        Set Budget
+                        <Icon name='money bill alternate outline' />
+                      </Header>
+                    </Grid.Column>
 
-              <Table.Row>
-                <Table.Cell>
-                  <Icon name='dollar sign' /> Books
-                </Table.Cell>
-                <Table.Cell textAlign='right'>$34</Table.Cell>
-              </Table.Row>
-              <Table.Row>
-                <Table.Cell>
-                  <Icon name='dollar sign' /> Clothes
-                </Table.Cell>
-                <Table.Cell textAlign='right'>$200</Table.Cell>
-
-              </Table.Row>
-
-            </Table.Body>
-          </Table>
-        </Grid.Column>
-
-        <Grid.Column >
-          <Header as='h1' inverted textAlign="center">How much have you spent?</Header>
-        </Grid.Column>
-      </Grid>
-      </Container>
-    );
+                    <Grid.Column>
+                      <Header>
+                        Spent
+                        <Icon name='shopping bag' />
+                      </Header>
+                    </Grid.Column>
+                  </Grid.Row>
+                </Grid>
+              </Segment>
+              <Segment>
+                <Header>Remaining Budget: </Header>
+              </Segment>
+            </Grid.Column>
+          </Grid>
+        </Container>
+      );
+    }
   }
-}
 
 export default BudgetDash;
