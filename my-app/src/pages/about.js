@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/about.css';
-import AboutBackground from '../images/about-background.png';
+import AboutBackground from '../../public/about-background.png';
 import { Container, Image } from 'semantic-ui-react';
 
 class About extends React.Component {

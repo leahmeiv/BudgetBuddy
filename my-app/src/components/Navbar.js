@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Dropdown, Menu, Image, Icon, Search } from 'semantic-ui-react';
 import { NavLink } from 'react-router-dom';
-import Logo from '../images/menu-logo.png';
+import Logo from '../../public/menu-logo.png';
 
 export default class NavBar extends React.Component {
   render() {

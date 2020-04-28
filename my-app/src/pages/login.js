@@ -19,6 +19,7 @@ class Login extends React.Component {
             <Header size="large" textAlign="center">
               <div className="form-text">Login here!</div>
             </Header>
+
             <Container vertical>
               <Form className="form-text">
                 <Form.Field>
