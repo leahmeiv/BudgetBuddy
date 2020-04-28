@@ -1,17 +1,22 @@
 import React from 'react';
 import { Grid, Container, List, Image, Icon, Menu } from 'semantic-ui-react';
+import { withRouter } from 'react-router-dom';
+import { withTracker } from 'meteor/react-meteor-data';
+import PropTypes from 'prop-types';
+import { Meteor } from 'meteor/meteor';
+
 
 /** The Footer appears at the bottom of every page. Rendered by the App Layout component. */
 class Footer extends React.Component {
   render() {
-    const divStyle = { paddingTop: '15px' };
     return (
 
-      <Container className="footer-background" fitted>
-        {this.props.currentUser === '' ? (
+      <Container fixed className="footer-background">
+        {this.props.currentUser !== '' ? (
 
         <div>
-        <Grid divided='vertically'>
+
+          <Grid divided='vertically'>
           <Grid.Row internally celled columns={3}>
             <Grid.Column>
               <b>Information</b>
@@ -51,7 +56,7 @@ class Footer extends React.Component {
           </Grid.Row>
         </Grid>
         </div>
-        ) : ''}
+            ) : ''}
 
       </Container>
 
@@ -59,4 +64,15 @@ class Footer extends React.Component {
   }
 }
 
-export default Footer;
+/** Declare the types of all properties. */
+Footer.propTypes = {
+  currentUser: PropTypes.string,
+};
+
+/** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
+const FooterContainer = withTracker(() => ({
+  currentUser: Meteor.user() ? Meteor.user().username : '',
+}))(Footer);
+
+/** Enable ReactRouter for this component. https://reacttraining.com/react-router/web/api/withRouter */
+export default withRouter(FooterContainer);

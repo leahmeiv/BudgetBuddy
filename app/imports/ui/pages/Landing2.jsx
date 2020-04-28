@@ -9,7 +9,7 @@ import { withRouter } from 'react-router-dom';
 
 
 /** A simple static component to render some text for the landing page. */
-class Landing extends React.Component {
+class Landing2 extends React.Component {
   render() {
 
     const slogan1 = {
@@ -68,8 +68,11 @@ class Landing extends React.Component {
 
 
     return (
-      <div>
-        {this.props.currentUser === '' ? (
+
+      <Container>
+      {this.props.currentUser === '' ? (
+
+        <div>
 
           <Grid verticalAlign='middle'>
 <Container>
@@ -87,18 +90,20 @@ class Landing extends React.Component {
           </Button>
 </Container>
           </Grid>
-          ) : ''}
       </div>
-    );
+      ) : ''}
+      </Container>
+
+  );
   }
 }
 /** Declare the types of all properties. */
-Landing.propTypes = {
+Landing2.propTypes = {
   currentUser: PropTypes.string,
 };
 
 /** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
-const LandingContainer = withTracker(() => ({
+const Landing2Container = withTracker(() => ({
   currentUser: Meteor.user() ? Meteor.user().username : '',
-}))(Landing);
-        export default withRouter(LandingContainer);
+}))(Landing2);
+        export default withRouter(Landing2Container);

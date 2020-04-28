@@ -25,6 +25,7 @@ class App extends React.Component {
     return (
 
         <Router>
+          <div>
             <NavBar/>
             <Switch>
               <Route exact path="/" component={Landing}/>
@@ -40,6 +41,7 @@ class App extends React.Component {
               <Route component={NotFound}/>
             </Switch>
             <Footer/>
+          </div>
         </Router>
     );
   }

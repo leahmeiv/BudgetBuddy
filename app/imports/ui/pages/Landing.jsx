@@ -5,14 +5,11 @@ import PropTypes from 'prop-types';
 import { withTracker } from 'meteor/react-meteor-data';
 import { Meteor } from "meteor/meteor";
 import { withRouter } from 'react-router-dom';
-import About from './About';
-
-
+import Landing2 from './Landing2';
 
 /** A simple static component to render some text for the landing page. */
 class Landing extends React.Component {
   render() {
-
 
     const slogan1 = {
       fontFamily: 'Helvetica',
@@ -47,43 +44,27 @@ class Landing extends React.Component {
       top: '55%'
 
     };
+
     return (
-
       <div>
-        {this.props.currentUser === '' ? (
-          <Container fluid>
-            <Grid verticalAlign='middle'>
-              <Container>
-                <p style={slogan1}>
-                  <b>BE MY BUDGET BUDDY!</b>
-                </p>
-                <p style={slogan2}>
-                  It's time to see how much you have spent...</p>
-
-                <Button basic style={buttonOneStyle} primary as={NavLink} exact to="/signin">
-                  Login</Button>
-
-                <Button style={buttonTwoStyle} primary as={NavLink} exact to="/signup">
-                  Sign Up
-                </Button>
-              </Container>
-            </Grid>            <style>{'body { background: rgba(222,242,241, 0.7)  url(\'/images/home-background.jpeg\') no-repeat center center fixed;  background-size: cover; }'}
+        {this.props.currentUser !== '' ? (
+            <style>{'body { background: rgba(222,242,241, 0.7)  url(\'/images/home-background.jpeg\') no-repeat center center fixed;  background-size: cover; }'}
             </style>
-          </Container>
           ) : ''}
 
-        {this.props.currentUser !== '' ? (
-          <Container fluid>
-            <About/>
-            <style>{'body { background: rgba(222,242,241, 0.7)  url(\'/images/about-background.png\') no-repeat center center fixed;  background-size: cover; }'}
+        {this.props.currentUser === '' ? (
+
+            <style>{'body { background: rgba(222,242,241, 0.7)  url(\'/images/home-background.jpeg\') no-repeat center center fixed;  background-size: cover; }'}
             </style>
-          </Container>
+
         ) : ''}
+        <Landing2/>
       </div>
 
     );
   }
 }
+
 /** Declare the types of all properties. */
 Landing.propTypes = {
   currentUser: PropTypes.string,
