@@ -42,12 +42,10 @@ Meteor.methods({
       const budget = 0;
       const firstName = first;
       const lastName = last;
-      const password = password;
 
       User.insert({
         firstName: firstName,
         lastName: lastName,
-        password: password,
         budget: budget,
         owner: owner,
       });

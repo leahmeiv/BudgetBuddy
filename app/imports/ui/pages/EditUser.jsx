@@ -13,15 +13,15 @@ class EditUser extends React.Component {
 
   /** On successful submit, insert the data. */
   submit(data) {
-    const { firstName, lastName, budget, password, owner, _id } = data;
-    User.update(_id, { $set: { firstName, lastName, budget, password, owner} }, (error) => (error ?
+    const { firstName, lastName, budget, owner, _id } = data;
+    User.update(_id, { $set: { firstName, lastName, budget, owner} }, (error) => (error ?
       swal('Error', error.message, 'error') :
       swal('Success', 'Item updated successfully', 'success')));
   }
 
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
   render() {
-    return (this.props.ready) ? this.renderPage() : <Loader active>Getting data</Loader>;
+    return (this.props.ready) ? this.renderPage() : <div><Loader active>Getting data</Loader></div> ;
   }
 
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
@@ -35,7 +35,6 @@ class EditUser extends React.Component {
               <TextField name='firstName'/>
               <TextField name='lastName' />
               <NumField name='budget' decimal={false}/>
-              <TextField name='password'/>
               <SubmitField value='Submit'/>
               <ErrorsField/>
               <HiddenField name='owner' />
@@ -47,21 +46,21 @@ class EditUser extends React.Component {
   }
 }
 
+
 /** Require the presence of a Stuff document in the props object. Uniforms adds 'model' to the props, which we use. */
 EditUser.propTypes = {
-  doc: PropTypes.object,
-  model: PropTypes.object,
+  doc: PropTypes.array.isRequired,
+  model: PropTypes.array.isRequired,
   ready: PropTypes.bool.isRequired,
 };
 
 /** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
-export default withTracker(({ match }) => {
-  // Get the documentID from the URL field. See imports/ui/layouts/App.jsx for the route containing :_id.
-  const documentId = match.params._id;
-  // Get access to User documents.
+export default withTracker(() => {
+
+  // Get access to Stuff documents.
   const subscription = Meteor.subscribe('User');
   return {
-    doc: User.findOne(documentId),
+    doc: User.find({}).fetch()[0],
     ready: subscription.ready(),
   };
 })(EditUser);

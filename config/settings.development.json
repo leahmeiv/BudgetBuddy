@@ -2,6 +2,7 @@
   "defaultAccounts": [
     {
       "firstname": "BB",
+      "lastname": "Admin",
       "email": "admin@foo.com",
       "password": "changeme",
       "role": "admin"
@@ -26,6 +27,7 @@
     { "firstName": "Levy", "lastName": "Matsuda", "budget": 5, "owner": "levy@foo.com", "password": "changeme" },
     { "firstName": "Leah", "lastName": "Vilanueva", "budget": 5, "owner": "leah@foo.com", "password": "changeme" }
   ],
+
   "defaultData": [
     { "name": "Basket", "quantity": 3, "owner": "john@foo.com", "condition": "excellent" },
     { "name": "Bicycle", "quantity": 2, "owner": "john@foo.com", "condition": "poor" },

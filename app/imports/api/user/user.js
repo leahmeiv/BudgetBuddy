@@ -10,7 +10,6 @@ const UserSchema = new SimpleSchema({
   firstName: String,
   lastName: String,
   budget: [Number],
-  password: String,
   owner: String,
 }, { tracker: Tracker });
 
