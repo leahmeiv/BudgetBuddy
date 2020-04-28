@@ -1,6 +1,11 @@
 import React from 'react';
 import { Image, Button,Container } from 'semantic-ui-react';
 import { NavLink } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { withTracker } from 'meteor/react-meteor-data';
+import { Meteor } from "meteor/meteor";
+import { withRouter } from 'react-router-dom';
+
 
 
 /** A simple static component to render some text for the landing page. */
@@ -9,9 +14,10 @@ class Landing extends React.Component {
     return (
 
       <div>
+        {this.props.currentUser === '' ? (
+          <div>
         <Image fluid className="stretch" size='huge'
                src={'images/home-background.jpeg'}/>
-        <Container >
           <p className="slogan1">
             <b>BE MY BUDGET BUDDY!</b>
           </p>
@@ -23,10 +29,19 @@ class Landing extends React.Component {
           <Button className="ui button two" primary as={NavLink} exact to="/signup">
             Sign Up
           </Button>
-        </Container>
+          </div>
+          ) : ''}
       </div>
     );
   }
 }
+/** Declare the types of all properties. */
+Landing.propTypes = {
+  currentUser: PropTypes.string,
+};
 
-export default Landing;
+/** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
+const LandingContainer = withTracker(() => ({
+  currentUser: Meteor.user() ? Meteor.user().username : '',
+}))(Landing);
+        export default withRouter(LandingContainer);
