@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Image } from 'semantic-ui-react';
+import { Container } from 'semantic-ui-react';
 import { NavLink } from 'react-router-dom';
 
 
@@ -8,9 +8,6 @@ class About extends React.Component {
   render() {
     return (
       <div>
-        <Image  className="stretch"
-                src={'images/about-background.png'}/>
-
         <Container>
           <p className="slogan1">
             <b>ABOUT BUDGET BUDDY</b>

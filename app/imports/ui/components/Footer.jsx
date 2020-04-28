@@ -1,12 +1,16 @@
 import React from 'react';
-import { Grid, Container,List, Image, Icon } from 'semantic-ui-react';
+import { Grid, Container, List, Image, Icon, Menu } from 'semantic-ui-react';
 
 /** The Footer appears at the bottom of every page. Rendered by the App Layout component. */
 class Footer extends React.Component {
   render() {
     const divStyle = { paddingTop: '15px' };
     return (
-      <Container className="footer-background" Fitted>
+
+      <Container className="footer-background" fitted>
+        {this.props.currentUser === '' ? (
+
+        <div>
         <Grid divided='vertically'>
           <Grid.Row internally celled columns={3}>
             <Grid.Column>
@@ -46,6 +50,9 @@ class Footer extends React.Component {
             </p>
           </Grid.Row>
         </Grid>
+        </div>
+        ) : ''}
+
       </Container>
 
     );

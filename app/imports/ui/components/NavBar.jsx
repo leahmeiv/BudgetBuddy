@@ -11,12 +11,17 @@ class NavBar extends React.Component {
   render() {
     const menuStyle = { marginBottom: '10px' };
     return (
+      <div>
+      {this.props.currentUser !== '' ? (
+
       <Menu style={menuStyle} attached="top" borderless inverted>
         <Menu.Item as={NavLink} activeClassName="" exact to="/">
           <Image size='medium'src={'images/menu-logo.png'} />
         </Menu.Item>
         <Menu.Item as={NavLink} activeClassName="active" exact to="/about" key='add'>About Us</Menu.Item>
         <Menu.Item as={NavLink} activeClassName="active" exact to="/budgetdash" key='add'>BudgetDash</Menu.Item>
+
+
         {this.props.currentUser ? (
             [<Menu.Item as={NavLink} activeClassName="active" exact to="/calculator" key='add'>Calculator</Menu.Item>]
         ) : ''}
@@ -40,6 +45,9 @@ class NavBar extends React.Component {
           )}
         </Menu.Item>
       </Menu>
+      ) : ''}
+      </div>
+
     );
   }
 }

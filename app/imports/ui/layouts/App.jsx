@@ -23,11 +23,9 @@ import { Menu } from 'semantic-ui-react/dist/commonjs/collections/Menu/Menu';
 class App extends React.Component {
   render() {
     return (
-        <Router>
-          {this.props.currentUser === ' ' ? (
-            <NavBar/>
-          ) : ''}
 
+        <Router>
+            <NavBar/>
             <Switch>
               <Route exact path="/" component={Landing}/>
               <Route path="/about" component={About}/>
@@ -41,10 +39,7 @@ class App extends React.Component {
               <ProtectedRoute path="/signout" component={Signout}/>
               <Route component={NotFound}/>
             </Switch>
-          {this.props.currentUser === ' ' ? (
             <Footer/>
-          ) : ''}
-
         </Router>
     );
   }
