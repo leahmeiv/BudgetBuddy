@@ -77,26 +77,6 @@
 }
 
 
-.slogan1 {
-  font-family:Helvetica, Arial, "sans-serif";
-  font-size: 40px;
-  color: white;
-  position: absolute;
-  top: 50%;
-  left:5%
-}
-
-.slogan2{
-  font-family:Helvetica, Arial, "sans-serif";
-  font-size: 30px;
-  font-weight: lighter;
-  color: white;
-  position: absolute;
-  top: 57%;
-  left:5%
-}
-
-
 .ui.button.one{
   position: absolute;
   top:65%;

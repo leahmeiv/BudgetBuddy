@@ -24,7 +24,7 @@ class App extends React.Component {
   render() {
     return (
         <Router>
-          {this.props.currentUser !== ' ' ? (
+          {this.props.currentUser === ' ' ? (
             <NavBar/>
           ) : ''}
 
@@ -41,7 +41,10 @@ class App extends React.Component {
               <ProtectedRoute path="/signout" component={Signout}/>
               <Route component={NotFound}/>
             </Switch>
+          {this.props.currentUser === ' ' ? (
             <Footer/>
+          ) : ''}
+
         </Router>
     );
   }

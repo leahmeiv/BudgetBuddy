@@ -20,7 +20,6 @@ class Landing extends React.Component {
             <Landing2/>
             <style>{'body { background: rgba(222,242,241, 0.7)  url(\'/images/home-background.jpeg\') no-repeat center center fixed;  background-size: cover; }'}
             </style>
-
           </Container>
           ) : ''}
       </div>

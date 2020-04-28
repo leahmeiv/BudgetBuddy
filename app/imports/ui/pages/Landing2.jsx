@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, Button,Container } from 'semantic-ui-react';
+import { Image, Button,Grid, Container } from 'semantic-ui-react';
 import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { withTracker } from 'meteor/react-meteor-data';
@@ -11,16 +11,34 @@ import { withRouter } from 'react-router-dom';
 /** A simple static component to render some text for the landing page. */
 class Landing extends React.Component {
   render() {
-    return (
 
+    const slogan1 = {
+      fontFamily: 'Helvetica',
+      fontSize: '40px',
+      position: 'absolute',
+      top:'40%',
+      left: '5%'
+    };
+
+    const slogan2 = {
+      fontFamily: 'Helvetica',
+      fontSize: '30px',
+      fontWeight:'lighter',
+      position: 'absolute',
+      top:'47%',
+      left: '5%'
+    };
+    
+    return (
       <div>
         {this.props.currentUser === '' ? (
-          <Container fluid>
 
-          <p className="slogan1">
+          <Grid verticalAlign='middle'>
+<Container>
+          <p style={slogan1}>
             <b>BE MY BUDGET BUDDY!</b>
           </p>
-          <p className="slogan2">
+          <p style={slogan2}>
             It's time to see how much you have spent...</p>
 
           <Button className="ui button one" primary as={NavLink} exact to="/signin">
@@ -28,7 +46,8 @@ class Landing extends React.Component {
           <Button className="ui button two" primary as={NavLink} exact to="/signup">
             Sign Up
           </Button>
-          </Container>
+</Container>
+          </Grid>
           ) : ''}
       </div>
     );
