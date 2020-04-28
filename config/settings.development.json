@@ -1,7 +1,25 @@
 {
   "defaultAccounts": [
-    { "email": "admin@foo.com", "password": "changeme", "role": "admin" },
-    { "email": "john@foo.com", "password": "changeme" }
+    {
+      "firstname": "BB",
+      "email": "admin@foo.com",
+      "password": "changeme",
+      "role": "admin"
+    },
+    {
+      "firstname": "levy",
+      "lastname": "matsuda",
+      "email": "levy@foo.com",
+      "password": "changeme",
+      "role": "user"
+    },
+    {
+      "firstname": "leah",
+      "lastname": "vilanueva",
+      "email": "leah@foo.com",
+      "password": "changeme",
+      "role": "user"
+    }
   ],
 
   "defaultData": [
@@ -10,4 +28,6 @@
     { "name": "Banana", "quantity": 2, "owner": "admin@foo.com", "condition": "good" },
     { "name": "Boogie Board", "quantity": 2, "owner": "admin@foo.com", "condition": "excellent" }
   ]
+
+
 }
