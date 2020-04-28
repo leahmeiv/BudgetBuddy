@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 import { withTracker } from 'meteor/react-meteor-data';
 import { Meteor } from "meteor/meteor";
 import { withRouter } from 'react-router-dom';
-import Landing2 from './Landing2';
 
 
 
@@ -17,10 +16,18 @@ class Landing extends React.Component {
       <div>
         {this.props.currentUser === '' ? (
           <Container fluid>
-            <Landing2/>
-            <style>{'body { background: rgba(222,242,241, 0.7)  url(\'/images/home-background.jpeg\') no-repeat center center fixed;  background-size: cover; }'}
-            </style>
 
+          <p className="slogan1">
+            <b>BE MY BUDGET BUDDY!</b>
+          </p>
+          <p className="slogan2">
+            It's time to see how much you have spent...</p>
+
+          <Button className="ui button one" primary as={NavLink} exact to="/signin">
+            Login</Button>
+          <Button className="ui button two" primary as={NavLink} exact to="/signup">
+            Sign Up
+          </Button>
           </Container>
           ) : ''}
       </div>
