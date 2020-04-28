@@ -24,7 +24,7 @@ class App extends React.Component {
   render() {
     return (
         <Router>
-          {this.props.currentUser ? (
+          {this.props.currentUser !== ' ' ? (
             <NavBar/>
           ) : ''}
 

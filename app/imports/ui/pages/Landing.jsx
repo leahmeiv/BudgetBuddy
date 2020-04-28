@@ -9,7 +9,7 @@ class Landing extends React.Component {
     return (
 
       <div>
-        <Image className="stretch" size='massive'
+        <Image fluid className="stretch" size='huge'
                src={'images/home-background.jpeg'}/>
         <Container >
           <p className="slogan1">
