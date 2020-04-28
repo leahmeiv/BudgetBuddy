@@ -16,11 +16,12 @@ function createUser(first, last, email, password, role) {
   if (role === 'admin') {
     Roles.addUsersToRoles(userID, 'admin');
   }
-  if (role === 'student') {
-    Roles.addUsersToRoles(userID, 'student');
+  if (role === 'user') {
+    Roles.addUsersToRoles(userID, 'user');
   }
 }
 
+//Methods for Schema specific data when registering
 Meteor.methods({
   'serverCreateUser': function (first, last, email, password, role) {
     console.log(`  Creating user ${email}.`);
@@ -41,10 +42,12 @@ Meteor.methods({
       const budget = 0;
       const firstName = first;
       const lastName = last;
+      const password = password;
 
       User.insert({
         firstName: firstName,
         lastName: lastName,
+        password: password,
         budget: budget,
         owner: owner,
       });
@@ -54,11 +57,12 @@ Meteor.methods({
 });
 
 /** When running app for first time, pass a settings file to set up a default user account. */
+//Account information
 if (Meteor.users.find().count() === 0) {
   if (Meteor.settings.defaultAccounts) {
     console.log('Creating the default user(s)');
     Meteor.settings.defaultAccounts.map(({ firstname, lastname, email, password, role }) => createUser(firstname, lastname, email, password, role));
   } else {
-    console.log('Cannot initialize the database!  Please invoke meteor with a settings file.');
+    console.log('Cannot initialize the database! Please invoke meteor with a settings file.');
   }
 }
