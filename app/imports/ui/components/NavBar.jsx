@@ -8,6 +8,21 @@ import { Roles } from 'meteor/alanning:roles';
 
 /** The NavBar appears at the top of every page. Rendered by the App Layout component. */
 class NavBar extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.findProfile = this.findProfile.bind(this);
+  }
+
+  findProfile() {
+    if (Roles.userIsInRole(Meteor.userId(), 'user')) {
+      if (this.props.ready) {
+        const user = UserInfo.find({}).fetch()[0];
+        return user._id;
+      }
+    }
+    return '';
+  }
   render() {
     const menuStyle = { marginBottom: '10px' };
     return (
@@ -21,7 +36,7 @@ class NavBar extends React.Component {
           [<Menu.Item as={NavLink} activeClassName="active" exact to="/calculator" key='add'>Calculator</Menu.Item>]
         ) : ''}
         {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
-          <Menu.Item as={NavLink} activeClassName="active" exact to="/admin" key='admin'>Admin</Menu.Item>
+          <Menu.Item as={NavLink} activeClassName="active" exact to="/admin/userlist" key='admin'>Users</Menu.Item>
         ) : ''}
         <Menu.Item position="right">
           {this.props.currentUser === '' ? (
@@ -35,6 +50,7 @@ class NavBar extends React.Component {
             <Dropdown text={this.props.currentUser} pointing="top right" icon={'user'}>
               <Dropdown.Menu>
                 <Dropdown.Item icon="sign out" text="Sign Out" as={NavLink} exact to="/signout"/>
+                <Dropdown.Item icon="sign out" text="Edit Profile" as={NavLink} exact to={'/editprofile/${this.findProfile()}'}/>
               </Dropdown.Menu>
             </Dropdown>
           )}
