@@ -203,25 +203,35 @@ body{
 
 /*login page*/
 .login-bg {
-  background: #2980b9;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2c3e50, #2980b9);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2c3e50, #2980b9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #1d5c5a;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,  #1d5c5a, #3aafa9, #badedc);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1d5c5a, #3aafa9, #badedc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding-top: 150px;
   padding-bottom: 100px;
+  background-size: cover !important;
 }
 
 .form-text {
   font-family: Helvetica, Arial, "sans-serif";
-  color: white;
+  color: #def2f1;
   padding-bottom: 2px;
 }
+
+.ui.message > a:hover{
+  color: #badedc;
+}
+
+.ui.message > a{
+  color: #3aafa9;
+}
+
 
 .signup-bg {
   background: #4b6cb7;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding-top: 150px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 }
 
 .expenses-bg {
