@@ -249,5 +249,26 @@ body{
 
 }
 
+/*footer*/
+/* unvisited link */
+.ui.link.list a.item {
+  color: #def2f1 !important;
+}
+
+/* visited link */
+.ui.link.list a.item:hover {
+  color: #3aafa9 !important;
+}
+
+/* mouse over link */
+.ui.link.list .item a:not(.ui){
+  color: #def2f1 !important;
+}
+
+/* mouse over link */
+.ui.link.list .item a:not(.ui):hover{
+  color: #3aafa9 !important;
+}
+
 
 

@@ -13,6 +13,7 @@ class Footer extends React.Component {
       position: 'absolute',
     };
 
+
     return (
       <div  style={footerStyle}>
         {this.props.currentUser !== '' ? (
