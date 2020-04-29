@@ -7,7 +7,7 @@ import { Meteor } from "meteor/meteor";
 import { withRouter } from 'react-router-dom';
 import Landing2 from './Landing2';
 import About from './About';
-import BudgetDash from './BudgetDash';
+import About2 from './About2';
 
 /** A simple static component to render some text for the landing page. */
 class Landing extends React.Component {
@@ -55,7 +55,7 @@ class Landing extends React.Component {
             <style>{'body { background: rgba(222,242,241, 0.7)  url(\'/images/about-background.png\') no-repeat center center fixed;  background-size: cover;}'}
             </style>
 
-             <BudgetDash/>
+             <About2/>
          </div>
 
          ) : ''}
