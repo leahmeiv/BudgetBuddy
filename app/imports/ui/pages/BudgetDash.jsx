@@ -1,10 +1,9 @@
 import React from 'react';
 import {Table, Icon, Container, Grid, Header, Segment, Divider} from 'semantic-ui-react';
 //import { NavLink } from 'react-router-dom';
-//import Expense from '../components/Expense';
-//import { withTracker } from 'meteor/react-meteor-data';
-//import PropTypes from 'prop-types';
-//import StuffItem from '../components/StuffItem';
+import { withTracker } from 'meteor/react-meteor-data';
+import PropTypes from 'prop-types';
+import { Expense } from '../components/Expense';
 
 
 /** A simple static component to render some text for the landing page. */

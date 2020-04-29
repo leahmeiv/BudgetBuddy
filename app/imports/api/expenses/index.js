@@ -1,1 +1,1 @@
-import './user.js';
+import './expenses.js';

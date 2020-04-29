@@ -31,7 +31,7 @@
   "defaultExpenses": [
     { "name": "Clothes", "amount": 1.00, "owner": "levy@foo.com"},
     { "name": "Food", "amount": 1.00, "owner": "levy@foo.com"},
-    { "firstName": "Clothes", "amount": 1.00, "owner": "leah@foo.com"}
+    { "name": "Clothes", "amount": 1.00, "owner": "leah@foo.com"}
   ],
 
   "defaultData": [

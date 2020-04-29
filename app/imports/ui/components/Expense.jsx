@@ -2,9 +2,32 @@ import React from 'react';
 import { Table } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import { withRouter, Link } from 'react-router-dom';
+import { Expenses } from '../../api/expenses/expenses';
 
-/** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
+
+/** Renders a single row in the Expenses table */
 class Expense extends React.Component {
+  constructor(props) {
+    super(props);
+    this.onClick = this.onClick.bind(this);
+    this.deleteCallback = this.deleteCallback.bind(this);
+  }
+
+  deleteCallback(error) {
+    if (error) {
+      Bert.alert({ type: 'danger', message: `Delete failed: ${error.message}` });
+    } else {
+      Bert.alert({ type: 'success', message: 'Delete succeeded' });
+    }
+  }
+
+  onClick() {
+    /* eslint-disable-next-line */
+    if (confirm("Do you really want to remove this card?")) {
+      Expenses.remove(this.props.expense._id, this.deleteCallBack);
+    }
+  }
+
   render() {
     return (
       <Table.Row>

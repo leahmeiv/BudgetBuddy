@@ -17,6 +17,7 @@ import Signup from '../pages/Signup';
 import Signout from '../pages/Signout';
 import About from '../pages/About';
 import BudgetDash from '../pages/BudgetDash';
+import AdminExpenseList from '../pages/AdminExpenseList';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
@@ -35,6 +36,7 @@ class App extends React.Component {
               <ProtectedRoute path="/add" component={AddStuff}/>
               <ProtectedRoute path="/editprofile/:_id" component={EditProfile}/>
               <AdminProtectedRoute path="/admin/userlist" component={AdminUserList}/>
+              <AdminProtectedRoute path="/admin/expenseslist" component={AdminExpenseList}/>
               <ProtectedRoute path="/signout" component={Signout}/>
               <Route component={NotFound}/>
             </Switch>

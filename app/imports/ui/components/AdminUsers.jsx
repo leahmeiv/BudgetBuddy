@@ -39,7 +39,7 @@ class AdminUsers extends React.Component {
   }
 }
 AdminUsers.propTypes = {
-  users: PropTypes.array.isRequired,
+  user: PropTypes.array.isRequired,
   ready: PropTypes.bool.isRequired,
 };
 
