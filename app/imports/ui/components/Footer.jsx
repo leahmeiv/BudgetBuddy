@@ -1,18 +1,35 @@
 import React from 'react';
-import { Grid, Container,List, Image, Icon } from 'semantic-ui-react';
+import { Grid, Container, List, Image, Icon, Menu } from 'semantic-ui-react';
+import { withRouter, Link } from 'react-router-dom';
+import { withTracker } from 'meteor/react-meteor-data';
+import PropTypes from 'prop-types';
+import { Meteor } from 'meteor/meteor';
+
 
 /** The Footer appears at the bottom of every page. Rendered by the App Layout component. */
 class Footer extends React.Component {
   render() {
-    const divStyle = { paddingTop: '15px' };
+    const footerStyle= {
+      position: 'absolute',
+    };
+
     return (
-      <Container className="footer-background" Fitted>
-        <Grid divided='vertically'>
-          <Grid.Row internally celled columns={3}>
+      <div  style={footerStyle}>
+        {this.props.currentUser !== '' ? (
+
+        <div>
+
+          <Grid fluid container divided='vertically'>
+          <Grid.Row internally celled columns={4}>
+            <Grid.Column>
+
+            </Grid.Column>
             <Grid.Column>
               <b>Information</b>
-              <List link className="ui link list">
-                <List.Item as='a'>About Us</List.Item>
+              <List className="ui link list">
+                <List.Item as='a'>
+                  <Link to={'/about'}>About Us</Link>
+                </List.Item>
                 <List.Item as='a'>Message to Our Users</List.Item>
               </List>
             </Grid.Column>
@@ -37,19 +54,31 @@ class Footer extends React.Component {
             </Grid.Column>
 
           </Grid.Row>
-        </Grid>
-        <Grid>
-          <Grid.Row>
-            <p className="item">
+            <Grid.Row>
+<Container fluid textAlign={'center'}>
               <Icon name="copyright outline"/>
               Copyright 2020 BudgetBuddy Inc. All Rights Reserved | Legal Terms | Privacy Policy | Cookie Policy
-            </p>
-          </Grid.Row>
+</Container>
+            </Grid.Row>
         </Grid>
-      </Container>
+        </div>
+            ) : ''}
+
+      </div>
 
     );
   }
 }
 
-export default Footer;
+/** Declare the types of all properties. */
+Footer.propTypes = {
+  currentUser: PropTypes.string,
+};
+
+/** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
+const FooterContainer = withTracker(() => ({
+  currentUser: Meteor.user() ? Meteor.user().username : '',
+}))(Footer);
+
+/** Enable ReactRouter for this component. https://reacttraining.com/react-router/web/api/withRouter */
+export default withRouter(FooterContainer);
