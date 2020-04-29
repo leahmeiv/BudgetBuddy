@@ -49,30 +49,30 @@ class Landing extends React.Component {
 
     return (
       <div>
-
+          <div>
         {this.props.currentUser !== '' ? (
-        <div>
+         <div>
             <style>{'body { background: rgba(222,242,241, 0.7)  url(\'/images/home-background.jpeg\') no-repeat center center fixed;  background-size: cover;}'}
             </style>
 
-        </div>
-        ) : ''}
+         </div>
+         ) : ''}
+      </div>
 
-
+    <div>
         <div>
         {this.props.currentUser === '' ? (
 
+          <div>
             <style>{'body { background: rgba(222,242,241, 0.7)  url(\'/images/home-background.jpeg\') no-repeat center center fixed;  background-size: cover; background-blend-mode: overlay }'}
 
             </style>
-
-
-        ) : ''}
             <Landing2/>
-          <About/>
-
+            <About/>
           </div>
-
+        ) : ''}
+          </div>
+   </div>
       </div>
 
     );
