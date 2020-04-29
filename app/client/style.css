@@ -270,5 +270,15 @@ body{
   color: #3aafa9 !important;
 }
 
+.ui[class*="vertically divided"].grid > .row{
+  color: #2b7a78 !important;
+}
+
+.ui.grid.container{
+  align: center !important;
+
+}
+
+
 
 

@@ -10,22 +10,21 @@ import { Meteor } from 'meteor/meteor';
 class Footer extends React.Component {
   render() {
     const footerStyle= {
-      position: 'absolute',
-    };
+      position: 'fluid',
+      bottom: '0',
+      width: '100%',
+  };
 
 
     return (
-      <div  style={footerStyle}>
+      <div>
         {this.props.currentUser !== '' ? (
 
-        <div>
+        <div style={footerStyle}>
+          <Grid container divided='vertically'>
+          <Grid.Row  internally celled columns={3}>
 
-          <Grid fluid container divided='vertically'>
-          <Grid.Row internally celled columns={4}>
-            <Grid.Column>
-
-            </Grid.Column>
-            <Grid.Column>
+            <Grid.Column >
               <b>Information</b>
               <List className="ui link list">
                 <List.Item as='a'>
@@ -55,6 +54,7 @@ class Footer extends React.Component {
             </Grid.Column>
 
           </Grid.Row>
+
             <Grid.Row>
 <Container fluid textAlign={'center'}>
               <Icon name="copyright outline"/>
