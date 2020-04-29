@@ -9,9 +9,15 @@ import { Meteor } from 'meteor/meteor';
 /** The Footer appears at the bottom of every page. Rendered by the App Layout component. */
 class Footer extends React.Component {
   render() {
-    return (
+    const footerStyle= {
+      position: 'absolute',
+      right: '0',
+      bottom: '0',
+      left: '0'
+    };
 
-      <Container fixed className="footer-background">
+    return (
+      <Container style={footerStyle} className="footer-background" >
         {this.props.currentUser !== '' ? (
 
         <div>

@@ -5,7 +5,8 @@ import PropTypes from 'prop-types';
 import { withTracker } from 'meteor/react-meteor-data';
 import { Meteor } from "meteor/meteor";
 import { withRouter } from 'react-router-dom';
-import Landing2 from './Landing2';
+import About from './About';
+import Footer from '../components/Footer';
 
 /** A simple static component to render some text for the landing page. */
 class Landing extends React.Component {
@@ -48,17 +49,21 @@ class Landing extends React.Component {
     return (
       <div>
         {this.props.currentUser !== '' ? (
-            <style>{'body { background: rgba(222,242,241, 0.7)  url(\'/images/home-background.jpeg\') no-repeat center center fixed;  background-size: cover; }'}
+            <style>{'body { background: rgba(222,242,241, 0.7)  url(\'/images/home-background.jpeg\') no-repeat center center fixed;  background-size: cover;}'}
+
             </style>
           ) : ''}
 
         {this.props.currentUser === '' ? (
 
-            <style>{'body { background: rgba(222,242,241, 0.7)  url(\'/images/home-background.jpeg\') no-repeat center center fixed;  background-size: cover; }'}
+            <style>{'body { background: rgba(222,242,241, 0.7)  url(\'/images/home-background.jpeg\') no-repeat center center fixed;  background-size: cover; background-blend-mode: overlay }'}
+
             </style>
 
+
         ) : ''}
-        <Landing2/>
+        <About/>
+
       </div>
 
     );
