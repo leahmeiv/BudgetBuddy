@@ -1,36 +1,81 @@
 import React from 'react';
-import {Table, Icon, Container, Grid, Header, Segment, Divider} from 'semantic-ui-react';
 //import { NavLink } from 'react-router-dom';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
+import { Meteor } from 'meteor/meteor';
+import 'uniforms-bridge-simple-schema-2'; // required for Uniforms
+import { AutoForm, ErrorsField ,NumField, SubmitField, TextField } from 'uniforms-semantic';
+import {Table, Icon, Container, Grid, Header, Segment, Divider, Modal, Button, Loader} from 'semantic-ui-react';
+import SimpleSchema from 'simpl-schema';
+import swal from 'sweetalert';
 import { Expense } from '../components/Expense';
 import { Expenses } from '../../api/expenses/expenses';
 
+const formSchema = new SimpleSchema({
+  name: String,
+  amount: Number,
+});
 
 /** A simple static component to render some text for the landing page. */
 class BudgetDash extends React.Component {
 
+  /** On submit, insert the data. */
+  submit(data, formRef) {
+    const { name, amount} = data;
+    const owner = Meteor.user().username;
+    Expenses.insert({ name, amount, owner },
+      (error) => {
+        if (error) {
+          swal('Error', error.message, 'error');
+        } else {
+          swal('Success', 'Item added successfully', 'success');
+          formRef.reset();
+        }
+      });
+  }
 
   render() {
-    /*return (this.props.ready) ? this.renderPage() : <Loader active>Getting data</Loader>;
-  } */
-  /*renderPage() { */
+    return (this.props.ready) ? this.renderPage() : <Loader active>Getting data</Loader>;
+  }
+
+  /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
+  renderPage() {
+      let fRef = null;
       return (
         <Container className="expenses-bg" fluid>
           <Grid columns={2} divided centered padded>
             <Grid.Column width={8} centered>
               <Header as="h2" textAlign="center" inverted>How much have you spent?</Header>
-              <Table celled>
-                <Table.Header>
-                  <Table.Row>
-                    <Table.HeaderCell>Expense Name</Table.HeaderCell>
-                    <Table.HeaderCell><Icon name='dollar sign'/>Cost</Table.HeaderCell>
-                  </Table.Row>
-                </Table.Header>
-                <Table.Body>
-                  {this.props.expense.map((expenses) => <Expense key={expenses._id} expense={expenses} />)}
-                </Table.Body>
-              </Table>
+              <Grid.Row>
+                <Table celled>
+                  <Table.Header>
+                    <Table.Row>
+                      <Table.HeaderCell>Expense Name</Table.HeaderCell>
+                      <Table.HeaderCell><Icon name='dollar sign'/>Cost</Table.HeaderCell>
+                    </Table.Row>
+                  </Table.Header>
+                  <Table.Body>
+                    {this.props.expense.map((expenses) => <Expense key={expenses._id} expense={expenses} />)}
+                  </Table.Body>
+                </Table>
+              </Grid.Row>
+              <Grid.Row>
+                <Modal trigger={<Button>Add New Expense</Button>}>
+                <Modal.Content>
+                  <Grid container centered>
+                    <Grid.Column>
+                      <AutoForm ref={ref => { fRef = ref; }} schema={formSchema} onSubmit={data => this.submit(data, fRef)} >
+                        <Segment>
+                          <TextField name='name'/>
+                          <NumField name='amount' decimal={false}/>
+                          <SubmitField value='Submit'/>
+                          <ErrorsField/>
+                        </Segment>
+                      </AutoForm>
+                    </Grid.Column>
+                  </Grid>
+                </Modal.Content>
+              </Modal></Grid.Row>
             </Grid.Column>
 
             <Grid.Column>

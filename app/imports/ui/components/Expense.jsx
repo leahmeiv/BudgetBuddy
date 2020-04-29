@@ -33,9 +33,6 @@ export class Expense extends React.Component {
       <Table.Row>
         <Table.Cell>{this.props.expense.name}</Table.Cell>
         <Table.Cell>{this.props.expense.amount}</Table.Cell>
-        <Table.Cell>
-          <Link to={`/edit/${this.props.expense._id}`}>Edit</Link>
-        </Table.Cell>
       </Table.Row>
     );
   }
