@@ -47,14 +47,14 @@ class About extends React.Component {
     return (
       <div>
         <Grid container divided='vertically' textAlign='center'>
-          <p style={aboutSlogan}>
+          <Header style={aboutSlogan}>
             <b>ABOUT BUDGET BUDDY</b>
-          </p>
-          <p style={aboutFont}> We understand how hard it is to keep track of your own expenses and spending
+          </Header>
+          <Header style={aboutFont}> We understand how hard it is to keep track of your own expenses and spending
             habits. BudgetBuddy is a tool intended to help with that. Each month, BudgetBuddy will generate a monthly
             report based off of your expenses. Compiled reports contain a total of your expenses and report the user's
             spending habits. All you have to do is log down your online expenses and we will do the rest.
-          </p>
+          </Header>
           <Grid/>
         </Grid>
       </div>

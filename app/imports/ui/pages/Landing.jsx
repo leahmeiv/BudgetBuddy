@@ -50,12 +50,17 @@ class Landing extends React.Component {
     return (
       <div>
           <div>
+
         {this.props.currentUser !== '' ? (
          <div>
-            <style>{'body { background: rgba(222,242,241, 0.7)  url(\'/images/home-background.jpeg\') no-repeat center center fixed;  background-size: cover;}'}
+            <style>{'body { background: rgba(222,242,241, 0.7)  url(\'/images/about-background.png\') no-repeat center center fixed;  background-size: cover;}'}
             </style>
-        <BudgetDash/>
+
+           <div>
+             <BudgetDash/>
+           </div>
          </div>
+
          ) : ''}
       </div>
 

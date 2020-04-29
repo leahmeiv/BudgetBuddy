@@ -1,5 +1,9 @@
 import React from 'react';
 import {Table, Icon, Container, Grid, Header, Segment, Divider} from 'semantic-ui-react';
+import PropTypes from 'prop-types';
+import { withTracker } from 'meteor/react-meteor-data';
+import { Meteor } from "meteor/meteor";
+import { withRouter } from 'react-router';
 //import { NavLink } from 'react-router-dom';
 //import Expense from '../components/Expense';
 //import { withTracker } from 'meteor/react-meteor-data';
@@ -17,7 +21,9 @@ class BudgetDash extends React.Component {
   /*renderPage() { */
       return (
         <Container className="expenses-bg" fluid>
-          <Grid columns={2} divided centered padded>
+          {this.props.currentUser !== '' ? (
+
+            <Grid columns={2} divided centered padded>
             <Grid.Column width={8} centered>
               <Header as="h2" textAlign="center" inverted>How much have you spent?</Header>
               <Table celled>
@@ -39,7 +45,7 @@ class BudgetDash extends React.Component {
                   <Grid.Row verticalAlign='middle'>
                     <Grid.Column>
                       <Header>
-                        Set Budget 
+                        Set Budget
                         <Icon name='money bill alternate outline' />
                       </Header>
                     </Grid.Column>
@@ -58,9 +64,22 @@ class BudgetDash extends React.Component {
               </Segment>
             </Grid.Column>
           </Grid>
+          ) : ''}
+
         </Container>
       );
     }
   }
 
-export default BudgetDash;
+/** Declare the types of all properties. */
+BudgetDash.propTypes = {
+  currentUser: PropTypes.string,
+};
+
+/** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
+const BudgetDashContainer = withTracker(() => ({
+  currentUser: Meteor.user() ? Meteor.user().username : '',
+}))(BudgetDash);
+
+/** Enable ReactRouter for this component. https://reacttraining.com/react-router/web/api/withRouter */
+export default withRouter(BudgetDashContainer);

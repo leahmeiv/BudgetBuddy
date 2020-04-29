@@ -15,7 +15,7 @@ import NotFound from '../pages/NotFound';
 import Signin from '../pages/Signin';
 import Signup from '../pages/Signup';
 import Signout from '../pages/Signout';
-import About from '../pages/About';
+import About2 from '../pages/About2';
 import BudgetDash from '../pages/BudgetDash';
 import { Menu } from 'semantic-ui-react/dist/commonjs/collections/Menu/Menu';
 
@@ -29,7 +29,7 @@ class App extends React.Component {
             <NavBar/>
             <Switch>
               <Route exact path="/" component={Landing}/>
-              <Route path="/about" component={About}/>
+              <Route path="/about" component={About2}/>
               <Route path="/signin" component={Signin}/>
               <Route path="/signup" component={Signup}/>
               <Route path="/budgetdash" component={BudgetDash}/>

@@ -11,19 +11,19 @@ class Footer extends React.Component {
   render() {
     const footerStyle= {
       position: 'absolute',
-      right: '0',
-      bottom: '0',
-      left: '0'
     };
 
     return (
-      <Container style={footerStyle} className="footer-background" >
+      <div  style={footerStyle}>
         {this.props.currentUser !== '' ? (
 
         <div>
 
-          <Grid divided='vertically'>
-          <Grid.Row internally celled columns={3}>
+          <Grid fluid container divided='vertically'>
+          <Grid.Row internally celled columns={4}>
+            <Grid.Column>
+
+            </Grid.Column>
             <Grid.Column>
               <b>Information</b>
               <List link className="ui link list">
@@ -52,19 +52,17 @@ class Footer extends React.Component {
             </Grid.Column>
 
           </Grid.Row>
-        </Grid>
-        <Grid>
-          <Grid.Row>
-            <p className="item">
+            <Grid.Row>
+<Container fluid textAlign={'center'}>
               <Icon name="copyright outline"/>
               Copyright 2020 BudgetBuddy Inc. All Rights Reserved | Legal Terms | Privacy Policy | Cookie Policy
-            </p>
-          </Grid.Row>
+</Container>
+            </Grid.Row>
         </Grid>
         </div>
             ) : ''}
 
-      </Container>
+      </div>
 
     );
   }
