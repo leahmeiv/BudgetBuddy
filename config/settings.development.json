@@ -24,8 +24,14 @@
   ],
 
   "defaultUserInfo": [
-    { "firstName": "Levy", "lastName": "Matsuda", "budget": 5, "owner": "levy@foo.com", "password": "changeme" },
-    { "firstName": "Leah", "lastName": "Vilanueva", "budget": 5, "owner": "leah@foo.com", "password": "changeme" }
+    { "firstName": "Levy", "lastName": "Matsuda", "budget": 5, "owner": "levy@foo.com" },
+    { "firstName": "Leah", "lastName": "Vilanueva", "budget": 5, "owner": "leah@foo.com"}
+  ],
+
+  "defaultExpenses": [
+    { "name": "Clothes", "amount": 1.00, "owner": "levy@foo.com"},
+    { "name": "Food", "amount": 1.00, "owner": "levy@foo.com"},
+    { "firstName": "Clothes", "amount": 1.00, "owner": "leah@foo.com"}
   ],
 
   "defaultData": [
