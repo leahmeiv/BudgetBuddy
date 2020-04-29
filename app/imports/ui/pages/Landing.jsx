@@ -70,7 +70,6 @@ class Landing extends React.Component {
 
           <div>
             <style>{'body { background: rgba(222,242,241, 0.7)  url(\'/images/home-background.jpeg\') no-repeat center center fixed;  background-size: cover; background-blend-mode: overlay }'}
-
             </style>
             <Landing2/>
             <About/>
