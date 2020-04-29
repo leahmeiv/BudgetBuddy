@@ -9,15 +9,19 @@ class About extends React.Component {
 
 
     const aboutSlogan ={
-      fontSize:'40px',
+      fontSize:'30px',
       position: 'absolute',
-      top: '70%',
+      top: '80%',
+      color: '#2b7a78',
+      backgroundColor: 'black',
+      backgroundSize: '500px'
     };
 
     const aboutFont = {
       position: 'absolute',
       fontSize: '18px',
-      top: '77%'
+      top: '87%',
+      color: '#def2f1'
     };
 
   // .slogan1 {

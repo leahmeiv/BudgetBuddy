@@ -14,10 +14,10 @@ class Landing2 extends React.Component {
 
     const slogan1 = {
       fontFamily: 'Helvetica',
-      fontSize: '40px',
+      fontSize: '60px',
       position: 'absolute',
-      top:'40%',
-      left: '5%'
+      color: '#2b7a78',
+      top:'35%',
     };
 
     const slogan2 = {
@@ -25,74 +25,51 @@ class Landing2 extends React.Component {
       fontSize: '30px',
       fontWeight:'lighter',
       position: 'absolute',
-      top:'47%',
-      left: '5%'
+      color: '#def2f1',
+      top:'45%'
     };
 
     const buttonOneStyle = {
       fontFamily: 'Helvetica',
       fontSize: '20px',
+      fontWeight:'lighter',
       position: 'absolute',
-      left: '5%',
-      top: '55%'
+      left: '40%',
+      top: '52%'
     };
 
     const buttonTwoStyle = {
       fontFamily: 'Helvetica',
       fontSize: '20px',
+      fontWeight:'lighter',
       position: 'absolute',
-      left: '20%',
-      top: '55%'
-
+      left: '55%',
+      top: '52%'
     };
 
-
-  // .ui.button.one{
-  //     position: absolute;
-  //     top:65%;
-  //     left:5%;
-  //     background-color:white;
-  //     font-family: "Arial Narrow",sans-serif;
-  //     color:black;
-  //     font-size: 20px;
-  //   }
-  // .ui.button.two{
-  //     position: absolute;
-  //     top:65%;
-  //     left:20%;
-  //     background-color:white;
-  //     font-family: "Arial Narrow",sans-serif;
-  //     color:black;
-  //     font-size: 20px;
-  //   }
-
-
     return (
+<div>
+        {this.props.currentUser === '' ? (
 
-      <Container>
-      {this.props.currentUser === '' ? (
+          <Grid container divided='vertically' textAlign='center'>
 
-        <div>
-
-          <Grid verticalAlign='middle'>
-<Container>
           <p style={slogan1}>
             <b>BE MY BUDGET BUDDY!</b>
           </p>
           <p style={slogan2}>
             It's time to see how much you have spent...</p>
 
-          <Button basic style={buttonOneStyle} primary as={NavLink} exact to="/signin">
+          <Button  class={'ui basic teal button'} style={buttonOneStyle} primary as={NavLink} exact to="/signin">
             Login</Button>
 
-          <Button style={buttonTwoStyle} primary as={NavLink} exact to="/signup">
-            Sign Up
+          <Button class={'ui secondary  button'} style={buttonTwoStyle} primary as={NavLink} exact to="/signup">
+            Join
           </Button>
-</Container>
           </Grid>
-      </div>
-      ) : ''}
-      </Container>
+
+        ) : ''}
+</div>
+
 
   );
   }
