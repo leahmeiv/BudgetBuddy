@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
 import { withRouter, NavLink } from 'react-router-dom';
-import { Menu, Dropdown, Header, Image } from 'semantic-ui-react';
+import { Menu, Dropdown, Image } from 'semantic-ui-react';
 import { Roles } from 'meteor/alanning:roles';
 import { User } from '/imports/api/user/user'
 
@@ -29,7 +29,7 @@ class NavBar extends React.Component {
     return (
       <Menu style={menuStyle} attached="top" borderless inverted>
         <Menu.Item as={NavLink} activeClassName="" exact to="/">
-          <Image size='medium'src={'images/menu-logo.png'} />
+          <Image size='medium' src={'images/menu-logo.png'} />
         </Menu.Item>
         <Menu.Item as={NavLink} activeClassName="active" exact to="/about" key='add'>About Us</Menu.Item>
         <Menu.Item as={NavLink} activeClassName="active" exact to="/budgetdash" key='add'>BudgetDash</Menu.Item>
@@ -42,6 +42,10 @@ class NavBar extends React.Component {
 
         {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
           <Menu.Item as={NavLink} activeClassName="active" exact to="/admin/expenseslist" key='admin'>Expenses</Menu.Item>
+        ) : ''}
+
+        {Roles.userIsInRole(Meteor.userId(), 'user') ? (
+          <Menu.Item as={NavLink} activeClassName="active" exact to={`/budgetdash/${this.findProfile()}`} key='add'>BudgetDash</Menu.Item>
         ) : ''}
 
         <Menu.Item position="right">
@@ -75,10 +79,10 @@ NavBar.propTypes = {
 /** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
 const NavBarContainer = withTracker(() => {
   const subscription1 = Meteor.subscribe('User');
-  const subscription2 = Meteor.subscribe('StudentProfileInfo');
+  const subscription2 = Meteor.subscribe('Expenses');
   return {
     currentUser: Meteor.user() ? Meteor.user().username : '',
-    ready: (subscription1.ready() ),
+    ready: (subscription1.ready() && subscription2.ready() ),
   };
 })(NavBar);
 

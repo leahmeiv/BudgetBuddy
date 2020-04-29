@@ -30,11 +30,11 @@ class App extends React.Component {
               <Route path="/about" component={About}/>
               <Route path="/signin" component={Signin}/>
               <Route path="/signup" component={Signup}/>
-              <Route path="/budgetdash" component={BudgetDash}/>
               <ProtectedRoute path="/signout" component={Signout}/>
               <ProtectedRoute path="/list" component={ListStuff}/>
               <ProtectedRoute path="/add" component={AddStuff}/>
               <ProtectedRoute path="/editprofile/:_id" component={EditProfile}/>
+              <ProtectedRoute path="/budgetdash/:_id" component={BudgetDash}/>
               <AdminProtectedRoute path="/admin/userlist" component={AdminUserList}/>
               <AdminProtectedRoute path="/admin/expenseslist" component={AdminExpenseList}/>
               <ProtectedRoute path="/signout" component={Signout}/>

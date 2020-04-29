@@ -4,6 +4,7 @@ import {Table, Icon, Container, Grid, Header, Segment, Divider} from 'semantic-u
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import { Expense } from '../components/Expense';
+import { Expenses } from '../../api/expenses/expenses';
 
 
 /** A simple static component to render some text for the landing page. */
@@ -26,6 +27,9 @@ class BudgetDash extends React.Component {
                     <Table.HeaderCell><Icon name='dollar sign'/>Cost</Table.HeaderCell>
                   </Table.Row>
                 </Table.Header>
+                <Table.Body>
+                  {this.props.expense.map((expenses) => <Expense key={expenses._id} expense={expenses} />)}
+                </Table.Body>
               </Table>
             </Grid.Column>
 
@@ -62,4 +66,18 @@ class BudgetDash extends React.Component {
     }
   }
 
-export default BudgetDash;
+/** Require an array of Stuff documents in the props. */
+BudgetDash.propTypes = {
+  expense: PropTypes.array.isRequired,
+  ready: PropTypes.bool.isRequired,
+};
+
+/** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
+export default withTracker(() => {
+  // Get access to Stuff documents.
+  const subscription = Meteor.subscribe('Expenses');
+  return {
+    expense: Expenses.find({}).fetch(),
+    ready: subscription.ready(),
+  };
+})(BudgetDash);

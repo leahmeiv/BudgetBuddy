@@ -6,7 +6,7 @@ import { Expenses } from '../../api/expenses/expenses';
 
 
 /** Renders a single row in the Expenses table */
-class Expense extends React.Component {
+export class Expense extends React.Component {
   constructor(props) {
     super(props);
     this.onClick = this.onClick.bind(this);
