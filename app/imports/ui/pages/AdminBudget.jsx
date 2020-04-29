@@ -48,7 +48,7 @@ export default withTracker(() => {
   // Get access to Users documents.
   const subscription = Meteor.subscribe('UserAdmin');
   return {
-    budgets: Expense.find({}).fetch(),
+    budgets: Expense.find({}, { sort: { owner: -1 } }).fetch(),
     ready: subscription.ready(),
   };
 })(AdminBudget);
