@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Loader, Header, Segment } from 'semantic-ui-react';
+import { Grid, Loader, Header, Segment, Divider, Icon } from 'semantic-ui-react';
 import swal from 'sweetalert';
 import { AutoForm, ErrorsField, HiddenField, NumField, SubmitField, TextField } from 'uniforms-semantic';
 import { Meteor } from 'meteor/meteor';
@@ -27,11 +27,49 @@ class EditUser extends React.Component {
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
   renderPage() {
     return (
-      <Grid container centered>
-        <Grid.Column>
-          <Header as="h2" textAlign="center">Edit User</Header>
+      <Grid centered className="edituser-bg">
+
+        <Grid.Row>
+          <Grid.Column width={6} centered>
+            <Divider horizontal>
+              <Header as='h1' inverted>
+                <Icon name='user' />
+                User Information:
+              </Header>
+            </Divider>
+          </Grid.Column>
+
+        </Grid.Row>
+
+        <Grid.Row width={6}>
+          <Segment raised padded='very' textAlign='left'>
+            <Header as='h2' color='grey'>
+              <div>First Name: {this.props.doc.firstName} </div>
+            </Header>
+
+            <Header as='h2'color='grey'>
+              <div>Last Name: {this.props.doc.lastName}</div>
+            </Header>
+
+            <Header as='h2' color='grey'>
+              <div> Set Budget: {this.props.doc.budget}</div>
+            </Header>
+          </Segment>
+        </Grid.Row>
+
+        <Grid.Row centered>
+          <Divider horizontal>
+            <Header as='h1' inverted>
+              <Icon name='pencil' />
+              Edit User
+            </Header>
+          </Divider>
+        </Grid.Row>
+
+        <Grid.Row>
+        <Grid.Column width={6}>
           <AutoForm schema={UserSchema} onSubmit={data => this.submit(data)} model={this.props.doc}>
-            <Segment>
+            <Segment centered>
               <TextField name='firstName'/>
               <TextField name='lastName' />
               <NumField name='budget' decimal={false}/>
@@ -41,6 +79,8 @@ class EditUser extends React.Component {
             </Segment>
           </AutoForm>
         </Grid.Column>
+
+        </Grid.Row>
       </Grid>
     );
   }
