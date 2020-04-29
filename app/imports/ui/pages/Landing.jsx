@@ -8,6 +8,7 @@ import { withRouter } from 'react-router-dom';
 import Landing2 from './Landing2';
 import Footer from '../components/Footer';
 import About from './About';
+import BudgetDash from './BudgetDash';
 
 /** A simple static component to render some text for the landing page. */
 class Landing extends React.Component {
@@ -44,7 +45,6 @@ class Landing extends React.Component {
       position: 'absolute',
       left: '20%',
       top: '55%'
-
     };
 
     return (
@@ -54,7 +54,7 @@ class Landing extends React.Component {
          <div>
             <style>{'body { background: rgba(222,242,241, 0.7)  url(\'/images/home-background.jpeg\') no-repeat center center fixed;  background-size: cover;}'}
             </style>
-
+        <BudgetDash/>
          </div>
          ) : ''}
       </div>
