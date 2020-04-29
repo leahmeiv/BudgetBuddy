@@ -216,14 +216,6 @@ body{
   padding-bottom: 2px;
 }
 
-/*signup*/
-
-.form-text {
-  font-family: Helvetica, Arial, "sans-serif";
-  color: white;
-  padding-bottom: 2px;
-}
-
 .signup-bg {
   background: #4b6cb7;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
@@ -245,14 +237,16 @@ body{
   background-size: Cover;
   background-repeat: repeat;
 }
-#background {
-  width: 100%;
-  position: absolute;
-  left: 0px;
-}
 
 .stretch {
   min-width:100%; width:auto;
+}
+
+.edituser-bg {
+  background: #6190E8;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #A7BFE8, #6190E8);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #A7BFE8, #6190E8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 
