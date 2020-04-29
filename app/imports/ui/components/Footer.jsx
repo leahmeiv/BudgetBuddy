@@ -47,8 +47,9 @@ class Footer extends React.Component {
                 <List.Item as='a'>Get Started</List.Item>
                 <List.Item as='a'>Account</List.Item>
                 <List.Item as='a'>Terms and Conditions</List.Item>
-                <List.Item as='a'>
+                <List.Item as='a' href={'https://github.com/leahmeiv/BudgetBuddy'}>
                   <Image src={'images/github-logo.png'}/>
+
                   Github Repository</List.Item>
               </List>
             </Grid.Column>
