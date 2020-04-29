@@ -1,23 +1,58 @@
 import React from 'react';
-import { Container } from 'semantic-ui-react';
+import { Container, Grid } from 'semantic-ui-react';
 import { NavLink } from 'react-router-dom';
 
 
 /** A simple static component to render some text for the landing page. */
 class About extends React.Component {
   render() {
+
+
+    const aboutSlogan ={
+      fontSize:'40px',
+      position: 'absolute',
+      top: '70%',
+    };
+
+    const aboutFont = {
+      position: 'absolute',
+      fontSize: '18px',
+      top: '77%'
+    };
+
+  // .slogan1 {
+  //     font-family:Helvetica, Arial, "sans-serif";
+  //     font-size: 40px;
+  //     color: white;
+  //     position: absolute;
+  //     top: 50%;
+  //     left:5%
+  //   }
+  //
+  // .about-p-font{
+  //     font-family:Helvetica, Arial, "sans-serif";
+  //     font-size: 18px;
+  //     font-weight: lighter;
+  //     color: white;
+  //     position: absolute;
+  //     top: 57%;
+  //     left:5%;
+  //     margin-right: 10%;
+  //   }
+
     return (
       <div>
-        <Container>
-          <p className="slogan1">
+        <Grid container divided='vertically' textAlign='center'>
+          <p style={aboutSlogan}>
             <b>ABOUT BUDGET BUDDY</b>
           </p>
-          <p className="about-p-font"> We understand how hard it is to keep track of your own expenses and spending
+          <p style={aboutFont}> We understand how hard it is to keep track of your own expenses and spending
             habits. BudgetBuddy is a tool intended to help with that. Each month, BudgetBuddy will generate a monthly
             report based off of your expenses. Compiled reports contain a total of your expenses and report the user's
             spending habits. All you have to do is log down your online expenses and we will do the rest.
           </p>
-        </Container>
+          <Grid/>
+        </Grid>
       </div>
     );
   }

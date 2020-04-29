@@ -198,25 +198,25 @@ body{
 }
 
 
-.slogan1 {
-  font-family:Helvetica, Arial, "sans-serif";
-  font-size: 40px;
-  color: white;
-  position: absolute;
-  top: 50%;
-  left:5%
-}
+/*.slogan1 {*/
+  /*font-family:Helvetica, Arial, "sans-serif";*/
+  /*font-size: 40px;*/
+  /*color: white;*/
+  /*position: absolute;*/
+  /*top: 50%;*/
+  /*left:5%*/
+/*}*/
 
-.about-p-font{
-  font-family:Helvetica, Arial, "sans-serif";
-  font-size: 18px;
-  font-weight: lighter;
-  color: white;
-  position: absolute;
-  top: 57%;
-  left:5%;
-  margin-right: 10%;
-}
+/*.about-p-font{*/
+  /*font-family:Helvetica, Arial, "sans-serif";*/
+  /*font-size: 18px;*/
+  /*font-weight: lighter;*/
+  /*color: white;*/
+  /*position: absolute;*/
+  /*top: 57%;*/
+  /*left:5%;*/
+  /*margin-right: 10%;*/
+/*}*/
 
 
 body{
