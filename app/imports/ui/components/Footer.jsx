@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid, Container, List, Image, Icon, Menu } from 'semantic-ui-react';
-import { withRouter } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import { Meteor } from 'meteor/meteor';
@@ -26,8 +26,10 @@ class Footer extends React.Component {
             </Grid.Column>
             <Grid.Column>
               <b>Information</b>
-              <List link className="ui link list">
-                <List.Item as='a'>About Us</List.Item>
+              <List className="ui link list">
+                <List.Item as='a'>
+                  <Link to={'/about'}>About Us</Link>
+                </List.Item>
                 <List.Item as='a'>Message to Our Users</List.Item>
               </List>
             </Grid.Column>

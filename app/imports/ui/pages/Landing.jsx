@@ -6,7 +6,6 @@ import { withTracker } from 'meteor/react-meteor-data';
 import { Meteor } from "meteor/meteor";
 import { withRouter } from 'react-router-dom';
 import Landing2 from './Landing2';
-import Footer from '../components/Footer';
 import About from './About';
 import BudgetDash from './BudgetDash';
 
@@ -56,9 +55,7 @@ class Landing extends React.Component {
             <style>{'body { background: rgba(222,242,241, 0.7)  url(\'/images/about-background.png\') no-repeat center center fixed;  background-size: cover;}'}
             </style>
 
-           <div>
              <BudgetDash/>
-           </div>
          </div>
 
          ) : ''}
@@ -75,7 +72,8 @@ class Landing extends React.Component {
             <About/>
           </div>
         ) : ''}
-          </div>
+
+        </div>
    </div>
       </div>
 

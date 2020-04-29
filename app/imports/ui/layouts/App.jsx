@@ -16,6 +16,7 @@ import Signin from '../pages/Signin';
 import Signup from '../pages/Signup';
 import Signout from '../pages/Signout';
 import About2 from '../pages/About2';
+import About from '../pages/About';
 import BudgetDash from '../pages/BudgetDash';
 import { Menu } from 'semantic-ui-react/dist/commonjs/collections/Menu/Menu';
 
