@@ -5,6 +5,7 @@ import { withTracker } from 'meteor/react-meteor-data';
 import { withRouter, NavLink } from 'react-router-dom';
 import { Menu, Dropdown, Header, Image } from 'semantic-ui-react';
 import { Roles } from 'meteor/alanning:roles';
+import { User } from '/imports/api/user/user'
 
 /** The NavBar appears at the top of every page. Rendered by the App Layout component. */
 class NavBar extends React.Component {
@@ -17,7 +18,7 @@ class NavBar extends React.Component {
   findProfile() {
     if (Roles.userIsInRole(Meteor.userId(), 'user')) {
       if (this.props.ready) {
-        const user = UserInfo.find({}).fetch()[0];
+        const user = User.find({}).fetch()[0];
         return user._id;
       }
     }
@@ -50,7 +51,7 @@ class NavBar extends React.Component {
             <Dropdown text={this.props.currentUser} pointing="top right" icon={'user'}>
               <Dropdown.Menu>
                 <Dropdown.Item icon="sign out" text="Sign Out" as={NavLink} exact to="/signout"/>
-                <Dropdown.Item icon="sign out" text="Edit Profile" as={NavLink} exact to={'/editprofile/${this.findProfile()}'}/>
+                <Dropdown.Item icon="sign out" text="Edit Profile" as={NavLink} exact to={`/editprofile/${this.findProfile()}`}/>
               </Dropdown.Menu>
             </Dropdown>
           )}
@@ -63,12 +64,18 @@ class NavBar extends React.Component {
 /** Declare the types of all properties. */
 NavBar.propTypes = {
   currentUser: PropTypes.string,
+  ready: PropTypes.bool.isRequired,
 };
 
 /** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
-const NavBarContainer = withTracker(() => ({
-  currentUser: Meteor.user() ? Meteor.user().username : '',
-}))(NavBar);
+const NavBarContainer = withTracker(() => {
+  const subscription1 = Meteor.subscribe('User');
+  const subscription2 = Meteor.subscribe('StudentProfileInfo');
+  return {
+    currentUser: Meteor.user() ? Meteor.user().username : '',
+    ready: (subscription1.ready() ),
+  };
+})(NavBar);
 
 /** Enable ReactRouter for this component. https://reacttraining.com/react-router/web/api/withRouter */
 export default withRouter(NavBarContainer);

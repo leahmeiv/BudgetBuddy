@@ -30,10 +30,6 @@ class AdminUsers extends React.Component {
   render() {
     return (
       <Table.Row>
-        /**<Table.Cell>
-          <Button icon={'user delete'}
-                  onClick={this.onClick}></Button>
-        </Table.Cell>*/
         <Table.Cell>{this.props.user.firstName}</Table.Cell>
         <Table.Cell>{this.props.user.lastName}</Table.Cell>
         <Table.Cell>{this.props.user.budget}</Table.Cell>
