@@ -10,6 +10,7 @@ import SimpleSchema from 'simpl-schema';
 import swal from 'sweetalert';
 import { Expense } from '../components/Expense';
 import { Expenses } from '../../api/expenses/expenses';
+import { User } from '../../api/user/user'
 
 const formSchema = new SimpleSchema({
   name: String,
@@ -34,6 +35,22 @@ class BudgetDash extends React.Component {
       });
   }
 
+  expenseTotal() {
+    let total = 0;
+    for (let i = 0; i < this.props.expense.length; i++) {
+      total += this.props.expense[i].amount;
+    }
+    return total;
+  }
+
+  budgetLeft(budget, spent) {
+    let total = 0;
+    if (budget > spent) {
+      total = budget-spent;
+    }
+    return total;
+  }
+
   render() {
     return (this.props.ready) ? this.renderPage() : <Loader active>Getting data</Loader>;
   }
@@ -41,6 +58,7 @@ class BudgetDash extends React.Component {
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
   renderPage() {
       let fRef = null;
+
       return (
         <Container className="expenses-bg" fluid>
           <Grid columns={2} divided centered padded>
@@ -87,23 +105,42 @@ class BudgetDash extends React.Component {
 
                   <Grid.Row verticalAlign='middle'>
                     <Grid.Column>
-                      <Header>
-                        Set Budget 
-                        <Icon name='money bill alternate outline' />
-                      </Header>
+                      <Grid.Row>
+                        <Header>
+                          Set Budget
+                          <Icon name='money bill alternate outline' />
+                        </Header>
+                      </Grid.Row>
+                      <Grid.Row>
+                        <Header as='h2' textAlign="center">
+                          <div> ${this.props.user.budget} </div>
+                        </Header>
+                      </Grid.Row>
                     </Grid.Column>
 
                     <Grid.Column>
-                      <Header>
-                        Spent
-                        <Icon name='shopping bag' />
-                      </Header>
+                      <Grid.Row>
+                        <Header>
+                          Spent <Icon name='shopping bag' />
+                        </Header>
+                      </Grid.Row>
+                      <Grid.Row>
+                        <Header as='h2' textAlign="center">
+                          <div>${this.expenseTotal()}</div>
+                        </Header>
+                      </Grid.Row>
                     </Grid.Column>
                   </Grid.Row>
                 </Grid>
               </Segment>
               <Segment>
-                <Header>Remaining Budget: </Header>
+                <Header>
+                  <div>
+                  Remaining Budget: ${this.budgetLeft(this.props.user.budget,this.expenseTotal())}
+                  </div>
+                </Header>
+                <Header as='h2' textAlign="center">
+                </Header>
               </Segment>
             </Grid.Column>
           </Grid>
@@ -114,6 +151,7 @@ class BudgetDash extends React.Component {
 
 /** Require an array of Stuff documents in the props. */
 BudgetDash.propTypes = {
+  user: PropTypes.array.isRequired,
   expense: PropTypes.array.isRequired,
   ready: PropTypes.bool.isRequired,
 };
@@ -122,8 +160,10 @@ BudgetDash.propTypes = {
 export default withTracker(() => {
   // Get access to Stuff documents.
   const subscription = Meteor.subscribe('Expenses');
+  const subUser = Meteor.subscribe('User');
   return {
     expense: Expenses.find({}).fetch(),
-    ready: subscription.ready(),
+    user: User.find({}).fetch()[0],
+    ready: (subscription.ready() && subUser.ready()),
   };
 })(BudgetDash);
