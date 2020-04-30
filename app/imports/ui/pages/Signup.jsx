@@ -12,11 +12,14 @@ class Signup extends React.Component {
   /** Initialize state fields. */
   constructor(props) {
     super(props);
-    this.state = { firstname:'', lastname: '',email: '', password: '', role: 'user', error: '', redirectToReferer: false };
+    this.state = { firstname:'', lastname: '',email: '', password: '',confirmPassword: 'false', role: 'user', error: '', redirectToReferer: false };
 
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
+
+
   }
+
 
   /** Update the form controls each time the user interacts with them. */
   handleChange = (e, { name, value }) => {
@@ -25,12 +28,14 @@ class Signup extends React.Component {
 
   /** Handle Signup submission using Meteor's account mechanism. */
   handleSubmit() {
-    const { firstname, lastname, email, password, role } = this.state;
-    Meteor.call('serverCreateUser', firstname, lastname, email, password, role, (err) => {
+    const { firstname, lastname, email, password, confirmPassword, role } = this.state;
+    Meteor.call('serverCreateUser', firstname, lastname, email, password, confirmPassword, role, (err) => {
       if (err) {
         this.setState({ error: err.reason });
+
       } else {
         this.setState({ error: '', redirectToReferer: true });
+
       }
     });
   }
@@ -91,6 +96,15 @@ class Signup extends React.Component {
                   type="password"
                   onChange={this.handleChange}
                 />
+                    <Form.Input
+                      label="Confirm Password"
+                      icon="lock"
+                      iconPosition="left"
+                      name="confirmPassword"
+                      placeholder="Confirm Password"
+                      type="password"
+                      onChange={this.handleChange}
+                    />
                   </Grid.Column>
                   </Grid.Row>
 
@@ -105,7 +119,9 @@ class Signup extends React.Component {
             </Message>
             {this.state.error === '' ? (
               ''
+
             ) : (
+
               <Message
                 error
                 header="Registration was not successful"
