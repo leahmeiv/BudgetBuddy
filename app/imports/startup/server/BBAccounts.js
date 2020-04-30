@@ -24,33 +24,37 @@ function createUser(first, last, email, password, role) {
 //Methods for Schema specific data when registering
 Meteor.methods({
   'serverCreateUser': function (first, last, email, password, role) {
-    console.log(`  Creating user ${email}.`);
-    const userID = Accounts.createUser({
-      username: email,
-      firstname: first,
-      lastname: last,
-      email: email,
-      password: password,
-    });
-    if (role === 'admin') {
-      Roles.addUsersToRoles(userID, 'admin');
-    }
-    if (role === 'user') {
-      Roles.addUsersToRoles(userID, 'user');
-
-      const owner = email;
-      const budget = 0;
-      const firstName = first;
-      const lastName = last;
-
-      User.insert({
-        firstName: firstName,
-        lastName: lastName,
-        budget: budget,
-        owner: owner,
+    if (password.length < 10) {
+      throw new Meteor.Error('err','Password must be at least 10 characters')
+    } else {
+      console.log(`  Creating user ${email}.`);
+      const userID = Accounts.createUser({
+        username: email,
+        firstname: first,
+        lastname: last,
+        email: email,
+        password: password,
       });
+      if (role === 'admin') {
+        Roles.addUsersToRoles(userID, 'admin');
+      }
+      if (role === 'user') {
+        Roles.addUsersToRoles(userID, 'user');
+
+        const owner = email;
+        const budget = 0;
+        const firstName = first;
+        const lastName = last;
+
+        User.insert({
+          firstName: firstName,
+          lastName: lastName,
+          budget: budget,
+          owner: owner,
+        });
+      }
+      Meteor.publish(userID);
     }
-    Meteor.publish(userID);
   },
 });
 
