@@ -47,9 +47,10 @@ class BudgetDash extends React.Component {
             <Grid.Column width={8} centered>
               <Header as="h2" textAlign="center" inverted>How much have you spent?</Header>
               <Grid.Row>
-                <Table celled>
+                <Table celled defintion>
                   <Table.Header>
                     <Table.Row>
+                      <Table.HeaderCell />
                       <Table.HeaderCell>Expense Name</Table.HeaderCell>
                       <Table.HeaderCell><Icon name='dollar sign'/>Cost</Table.HeaderCell>
                     </Table.Row>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table } from 'semantic-ui-react';
+import { Table, Button, Icon} from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import { withRouter, Link } from 'react-router-dom';
 import { Expenses } from '../../api/expenses/expenses';
@@ -23,7 +23,7 @@ export class Expense extends React.Component {
 
   onClick() {
     /* eslint-disable-next-line */
-    if (confirm("Do you really want to remove this card?")) {
+    if (confirm("Do you really want to delete this expense?")) {
       Expenses.remove(this.props.expense._id, this.deleteCallBack);
     }
   }
@@ -31,6 +31,11 @@ export class Expense extends React.Component {
   render() {
     return (
       <Table.Row>
+        <Table.Cell>
+          <Button onClick={this.onClick} icon>
+            <Icon name='trash' />
+          </Button>
+        </Table.Cell>
         <Table.Cell>{this.props.expense.name}</Table.Cell>
         <Table.Cell>{this.props.expense.amount}</Table.Cell>
       </Table.Row>
