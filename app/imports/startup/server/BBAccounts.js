@@ -4,7 +4,7 @@ import { Roles } from 'meteor/alanning:roles';
 import { User } from '/imports/api/user/user';
 
 /* eslint-disable no-console */
-function createUser(first, last, email, password, role) {
+function createUser(first, last, email, password, confirmPassword, role) {
   console.log(`  Creating user ${email}.`);
   const userID = Accounts.createUser({
     firstname: first,
@@ -12,6 +12,7 @@ function createUser(first, last, email, password, role) {
     email: email,
     username: email,
     password: password,
+    confirmPassword: confirmPassword,
   });
   if (role === 'admin') {
     Roles.addUsersToRoles(userID, 'admin');
@@ -23,34 +24,40 @@ function createUser(first, last, email, password, role) {
 
 //Methods for Schema specific data when registering
 Meteor.methods({
-  'serverCreateUser': function (first, last, email, password, role) {
-    console.log(`  Creating user ${email}.`);
-    const userID = Accounts.createUser({
-      username: email,
-      firstname: first,
-      lastname: last,
-      email: email,
-      password: password,
-    });
-    if (role === 'admin') {
-      Roles.addUsersToRoles(userID, 'admin');
-    }
-    if (role === 'user') {
-      Roles.addUsersToRoles(userID, 'user');
+  'serverCreateUser': function (first, last, email, password, confirmPassword, role) {
+    if (password.length < 10 ) {
+      throw new Meteor.Error('err', 'Password must be at least 10 characters')
+    } if (password !== confirmPassword) {
+      throw new Meteor.Error('err', 'Passwords must match')
+    } else {
+        console.log(`  Creating user ${email}.`);
+        const userID = Accounts.createUser({
+          username: email,
+          firstname: first,
+          lastname: last,
+          email: email,
+          password: password,
+        });
+        if (role === 'admin') {
+          Roles.addUsersToRoles(userID, 'admin');
+        }
+        if (role === 'user') {
+          Roles.addUsersToRoles(userID, 'user');
 
-      const owner = email;
-      const budget = 0;
-      const firstName = first;
-      const lastName = last;
+          const owner = email;
+          const budget = 0;
+          const firstName = first;
+          const lastName = last;
 
-      User.insert({
-        firstName: firstName,
-        lastName: lastName,
-        budget: budget,
-        owner: owner,
-      });
-    }
-    Meteor.publish(userID);
+          User.insert({
+            firstName: firstName,
+            lastName: lastName,
+            budget: budget,
+            owner: owner,
+          });
+        }
+        Meteor.publish(userID);
+      }
   },
 });
 
@@ -59,7 +66,7 @@ Meteor.methods({
 if (Meteor.users.find().count() === 0) {
   if (Meteor.settings.defaultAccounts) {
     console.log('Creating the default user(s)');
-    Meteor.settings.defaultAccounts.map(({ firstname, lastname, email, password, role }) => createUser(firstname, lastname, email, password, role));
+    Meteor.settings.defaultAccounts.map(({ firstname, lastname, email, password, role }) => createUser(firstname, lastname, email, password , role));
   } else {
     console.log('Cannot initialize the database! Please invoke meteor with a settings file.');
   }
