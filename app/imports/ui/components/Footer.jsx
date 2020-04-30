@@ -10,50 +10,48 @@ import { Meteor } from 'meteor/meteor';
 class Footer extends React.Component {
   render() {
     const footerStyle= {
-      position: 'absolute',
-    };
+      position: 'fluid',
+      bottom: '0',
+      width: '100%',
+  };
+
 
     return (
-      <div  style={footerStyle}>
+      <div>
         {this.props.currentUser !== '' ? (
 
-        <div>
+        <div style={footerStyle}>
+          <Grid container divided='vertically'>
+          <Grid.Row  internally celled columns={3}>
 
-          <Grid fluid container divided='vertically'>
-          <Grid.Row internally celled columns={4}>
-            <Grid.Column>
-
-            </Grid.Column>
-            <Grid.Column>
+            <Grid.Column >
               <b>Information</b>
               <List className="ui link list">
                 <List.Item as='a'>
                   <Link to={'/about'}>About Us</Link>
                 </List.Item>
-                <List.Item as='a'>Message to Our Users</List.Item>
               </List>
             </Grid.Column>
 
             <Grid.Column>
               <b>Need Help?</b>
               <List link className="ui link list">
-                <List.Item as='a'>Support</List.Item>
+                <List.Item href='https://github.com/leahmeiv/BudgetBuddy/blob/master/README.md' as='a'>Support</List.Item>
               </List>
             </Grid.Column>
 
             <Grid.Column>
               <b>Connect</b>
               <List link className="ui link list">
-                <List.Item as='a'>Get Started</List.Item>
-                <List.Item as='a'>Account</List.Item>
-                <List.Item as='a'>Terms and Conditions</List.Item>
-                <List.Item as='a'>
+                <List.Item as='a' href={'https://github.com/leahmeiv/BudgetBuddy'}>
                   <Image src={'images/github-logo.png'}/>
+
                   Github Repository</List.Item>
               </List>
             </Grid.Column>
 
           </Grid.Row>
+
             <Grid.Row>
 <Container fluid textAlign={'center'}>
               <Icon name="copyright outline"/>

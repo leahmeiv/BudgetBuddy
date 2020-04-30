@@ -38,6 +38,12 @@ export default class Signin extends React.Component {
 
   //Render the signin form.
   render() {
+
+    const formStyle ={
+      backgroundColor:'#def2f1'
+    };
+
+
     const { from } = this.props.location.state || { from: { pathname: '/' } };
     // if correct authentication, redirect to page instead of login screen
     if (this.state.redirectToReferer) {
@@ -49,7 +55,7 @@ export default class Signin extends React.Component {
         <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
           <Grid.Column>
             <Header size={"huge"} textAlign="center">
-              <div className="form-text">Ready to Track Your Exepenses?
+              <div className="form-text">Ready to Track Your Expenses?
               </div>
             </Header>
 
@@ -59,7 +65,7 @@ export default class Signin extends React.Component {
 
 
             <Form onSubmit={this.handleSubmit}>
-              <Segment stacked>
+              <Segment style={formStyle} stacked>
                 <Form.Input
                   label="Email"
                   icon="user"
@@ -78,7 +84,7 @@ export default class Signin extends React.Component {
                   type="password"
                   onChange={this.handleChange}
                 />
-                <Form.Button content="Submit"/>
+                <Form.Button secondary basic content="Submit"/>
               </Segment>
             </Form>
             <Message>
