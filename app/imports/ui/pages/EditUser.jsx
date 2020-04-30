@@ -72,7 +72,7 @@ class EditUser extends React.Component {
             <Segment centered>
               <TextField name='firstName'/>
               <TextField name='lastName' />
-              <NumField name='budget' decimal={false}/>
+              <NumField name='budget' decimal={true}/>
               <SubmitField value='Submit'/>
               <ErrorsField/>
               <HiddenField name='owner' />

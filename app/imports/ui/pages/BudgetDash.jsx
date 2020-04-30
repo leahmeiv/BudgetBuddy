@@ -39,15 +39,12 @@ class BudgetDash extends React.Component {
     for (let i = 0; i < this.props.expense.length; i++) {
       total += this.props.expense[i].amount;
     }
-    return total;
+    return total.toFixed(2);
   }
 
   budgetLeft(budget, spent) {
-    let total = 0;
-    if (budget > spent) {
-      total = budget-spent;
-    }
-    return total;
+      let total = budget-spent;
+    return total.toFixed(2);
   }
 
   render() {
@@ -85,7 +82,7 @@ class BudgetDash extends React.Component {
                       <AutoForm ref={ref => { fRef = ref; }} schema={formSchema} onSubmit={data => this.submit(data, fRef)} >
                         <Segment>
                           <TextField name='name'/>
-                          <NumField name='amount' decimal={false}/>
+                          <NumField name='amount' decimal={true}/>
                           <SubmitField value='Submit'/>
                           <ErrorsField/>
                         </Segment>
