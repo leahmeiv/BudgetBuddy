@@ -7,16 +7,13 @@ import { HashRouter as Router, Route, Switch, Redirect, NavLink } from 'react-ro
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Landing from '../pages/Landing';
-import ListStuff from '../pages/ListStuff';
 import AdminUserList from '../pages/AdminUserList';
-import AddStuff from '../pages/AddStuff';
 import EditProfile from '../pages/EditUser';
 import NotFound from '../pages/NotFound';
 import Signin from '../pages/Signin';
 import Signup from '../pages/Signup';
 import Signout from '../pages/Signout';
 import About2 from '../pages/About2';
-import About from '../pages/About';
 import BudgetDash from '../pages/BudgetDash';
 import { Menu } from 'semantic-ui-react/dist/commonjs/collections/Menu/Menu';
 import AdminExpenseList from '../pages/AdminExpenseList';
@@ -35,8 +32,6 @@ class App extends React.Component {
               <Route path="/signin" component={Signin}/>
               <Route path="/signup" component={Signup}/>
               <ProtectedRoute path="/signout" component={Signout}/>
-              <ProtectedRoute path="/list" component={ListStuff}/>
-              <ProtectedRoute path="/add" component={AddStuff}/>
               <ProtectedRoute path="/editprofile/:_id" component={EditProfile}/>
               <ProtectedRoute path="/budgetdash/:_id" component={BudgetDash}/>
               <AdminProtectedRoute path="/admin/userlist" component={AdminUserList}/>
