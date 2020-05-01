@@ -23,9 +23,11 @@ function createUser(first, last, email, password, role) {
 
 //Methods for Schema specific data when registering
 Meteor.methods({
-  'serverCreateUser': function (first, last, email, password, role) {
+  'serverCreateUser': function (first, last, email, password, confirmPassword, role) {
     if (password.length < 10) {
       throw new Meteor.Error('err','Password must be at least 10 characters')
+    }  if (password !== confirmPassword) {
+      throw new Meteor.Error('err', 'Passwords must match')
     } else {
       console.log(`  Creating user ${email}.`);
       const userID = Accounts.createUser({
